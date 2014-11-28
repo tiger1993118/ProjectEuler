@@ -1,9 +1,11 @@
 ProjectEuler
 ============
 
-My solutions for problems in Project Euler that i come up with so far(written in Java)
+This Git repository created by me(Tiger) is my solutions to the problems on ProjectEuler website so far
+https://projecteuler.net/
+all of the solutions are written in Java at the moment
 
-Up to Problem 12
+I am at Problem 13 at the most
 
 
 
