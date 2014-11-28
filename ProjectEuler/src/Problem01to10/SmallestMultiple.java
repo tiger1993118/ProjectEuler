@@ -4,7 +4,7 @@ TODO
 Created on2014-11-26
 10:05:34 PM
  */
-package Problem1to50;
+package Problem01to10;
 
 import java.util.ArrayList;
 import java.util.Iterator;

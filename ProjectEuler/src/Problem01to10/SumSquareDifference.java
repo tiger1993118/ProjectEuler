@@ -4,7 +4,7 @@ TODO
 Created on2014-11-26
 11:08:26 PM
  */
-package Problem1to50;
+package Problem01to10;
 
 public class SumSquareDifference {
 

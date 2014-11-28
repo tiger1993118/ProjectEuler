@@ -3,7 +3,7 @@
 Created on 2014-11-27
 9:38:41 PM
  */
-package Problem1to50;
+package Problem01to10;
 
 /**
  * TODO Multiples of 3 and 5 If we list all the natural numbers below 10 that
@@ -16,7 +16,7 @@ package Problem1to50;
  * 
  * @author yi
  */
-public class Problem1 {
+public class Problem01 {
 
 	public static Integer multiplesOf3and5() {
 		Integer total = 0;
@@ -28,6 +28,6 @@ public class Problem1 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(Problem1.multiplesOf3and5());
+		System.out.println(Problem01.multiplesOf3and5());
 	}
 }

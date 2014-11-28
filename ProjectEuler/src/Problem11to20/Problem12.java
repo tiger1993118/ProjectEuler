@@ -3,7 +3,7 @@
 Created on2014-11-27
 9:53:26 PM
  */
-package Problem1to50;
+package Problem11to20;
 
 import java.util.ArrayList;
 import java.util.HashMap;

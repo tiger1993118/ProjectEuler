@@ -4,7 +4,7 @@ TODO
 Created on2014-11-26
 6:59:23 PM
  */
-package Problem1to50;
+package Problem01to10;
 
 public class Main {
 
