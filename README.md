@@ -8,28 +8,10 @@ Up to Problem 12
 
 Problem12 - Highly divisible triangular number(Solved on 2014/11/27 6:00)
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|   Problem #   | Problem Name  | Problem Link  |  Solved Time  | 
+| ------------- | ------------- | ------------- | ------------- |
+|   Problem12   | Highly divisible triangular number  |  https://projecteuler.net/problem=12  | 2014/11/27 17:58 |
 
-| Name | Description          |
-| ------------- | ----------- |
-| Help      | Display the help window.|
-| Close     | Closes a window     |
 
-| Name | Description          |
-| ------------- | ----------- |
-| Help      | ~~Display the~~ help window.|
-| Close     | _Closes_ a window     |
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
