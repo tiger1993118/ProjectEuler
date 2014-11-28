@@ -33,7 +33,6 @@ public class Main {
 
 		// SummationOfPrimes SOP = new SummationOfPrimes();
 		// System.out.println(SOP.sOP(2000000));
-		HighlyDivisibleTriangularNumber HDTN = new HighlyDivisibleTriangularNumber();
-		System.out.println(HDTN.smallestOver500());
+
 	}
 }
