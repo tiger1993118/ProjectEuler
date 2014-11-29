@@ -19,6 +19,7 @@ I am @ Problem 16 at the moment
 |   Problem13   | Large Sum  |  https://projecteuler.net/problem=13  | 2014-11-29 4:45 pm |
 |   Problem14   | Longest Collatz sequence  |  https://projecteuler.net/problem=14  | 2014-11-29 2:12 am |
 |   Problem15   | Lattice paths  |  https://projecteuler.net/problem=15  | 2014-11-28 5:30 pm |
+|   Problem16   | Power digit sum  |  https://projecteuler.net/problem=16  | 2014-11-29 5:45 pm |
 
 
 
