@@ -3,8 +3,7 @@ ProjectEuler
 
 This Git repository created by me(Tiger) is my solutions to the problems posted on ProjectEuler(https://projecteuler.net/) so far
 
-all of the solutions are written in Java at the moment
-I also give simple explanations for my solutions before the header of every classes
+All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
 I am @ Problem 16 at the moment
