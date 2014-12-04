@@ -9,9 +9,9 @@ package Problem01to10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Prime {
+public class Problem07 {
 
-	public Prime() {
+	public Problem07() {
 
 	}
 
@@ -46,5 +46,9 @@ public class Prime {
 		return true;
 	}
 
-	
+	public static void main(String[] args) {
+		Problem07 P = new Problem07();
+		System.out.println(P.prime(10001));
+	}
+
 }

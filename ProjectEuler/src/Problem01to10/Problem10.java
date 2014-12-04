@@ -6,9 +6,9 @@ Created on2014-11-26
  */
 package Problem01to10;
 
-public class SummationOfPrimes {
+public class Problem10 {
 
-	public SummationOfPrimes() {
+	public Problem10() {
 
 	}
 
@@ -26,7 +26,7 @@ public class SummationOfPrimes {
 
 		}
 		for (int i1 = 3; i1 < n; i1 += 2) {
-			
+
 			if (isPrimes[i1]) {
 				for (int i2 = i1 + i1; i2 < n; i2 += i1) {
 					if (i2 < n)
@@ -41,6 +41,11 @@ public class SummationOfPrimes {
 			}
 		}
 		return total;
-		
+
+	}
+
+	public static void main(String[] args) {
+		Problem10 SOP = new Problem10();
+		System.out.println(SOP.sOP(2000000));
 	}
 }

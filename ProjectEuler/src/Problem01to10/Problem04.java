@@ -6,8 +6,8 @@ Created on2014-11-26
  */
 package Problem01to10;
 
-public class LargestPalindromeProduct {
-	public LargestPalindromeProduct() {
+public class Problem04 {
+	public Problem04() {
 
 	}
 
@@ -43,25 +43,21 @@ public class LargestPalindromeProduct {
 		}
 		return 0;
 	}
-	
-	public boolean is3Product(Integer n){
-		for (int p = 999; p > 100; p --){
-			if (n % p == 0){
-				Integer p2 = n/p;
-				if (1000 > p2 && p2 > 100){
+
+	public boolean is3Product(Integer n) {
+		for (int p = 999; p > 100; p--) {
+			if (n % p == 0) {
+				Integer p2 = n / p;
+				if (1000 > p2 && p2 > 100) {
 					return true;
 				}
 			}
 		}
 		return false;
 	}
+
+	public static void main(String[] args) {
+		Problem04 P4 = new Problem04();
+		System.out.println(P4.lPP(1000000));
+	}
 }
-
-
-
-
-
-
-
-
-

@@ -6,9 +6,9 @@ Created on2014-11-26
  */
 package Problem01to10;
 
-public class LargestProduct {
+public class Problem08 {
 
-	public LargestProduct() {
+	public Problem08() {
 
 	}
 
@@ -26,5 +26,12 @@ public class LargestProduct {
 			}
 		}
 		return maxProduct;
+	}
+
+	public static void main(String[] args) {
+
+		Problem08 LP = new Problem08();
+		System.out.println(LP.lP());
+
 	}
 }

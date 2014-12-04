@@ -9,9 +9,9 @@ package Problem01to10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LargestPrimeFactor {
+public class Problem03 {
 
-	public LargestPrimeFactor() {
+	public Problem03() {
 
 	}
 
@@ -26,7 +26,8 @@ public class LargestPrimeFactor {
 		List<Long> factors = new ArrayList<Long>();
 		factors.add((long) 1);
 		while (number != 1) {
-			number = lPFHelper(factors.get(factors.size() - 1) + 1, number, number, factors);
+			number = lPFHelper(factors.get(factors.size() - 1) + 1, number,
+					number, factors);
 		}
 		return factors.get(factors.size() - 1);
 	}
@@ -40,6 +41,11 @@ public class LargestPrimeFactor {
 		}
 		factors.add(number);
 		return 1;
+	}
+
+	public static void main(String[] args) {
+		Problem03 P3 = new Problem03();
+		System.out.println(P3.lPF(600851475143L));
 	}
 
 }

@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class SmallestMultiple {
+public class Problem05 {
 
-	public SmallestMultiple() {
+	public Problem05() {
 
 	}
 
@@ -22,7 +22,8 @@ public class SmallestMultiple {
 			if (!factorsOfFactors.get(i).isEmpty()) {
 
 				for (int i2 = 0; i2 < i; i2++) {
-					List<Integer> factorsAtI = new ArrayList<Integer>(factorsOfFactors.get(i));
+					List<Integer> factorsAtI = new ArrayList<Integer>(
+							factorsOfFactors.get(i));
 					factorsOfFactors.get(i2);
 					for (Iterator<Integer> iter = factorsOfFactors.get(i2)
 							.listIterator(); iter.hasNext();) {
@@ -36,9 +37,9 @@ public class SmallestMultiple {
 			}
 		}
 		Integer product = 1;
-		for (List<Integer> l : factorsOfFactors){
-			if(! l.isEmpty()){
-				for (Integer i : l){
+		for (List<Integer> l : factorsOfFactors) {
+			if (!l.isEmpty()) {
+				for (Integer i : l) {
 					product *= i;
 				}
 			}
@@ -85,5 +86,10 @@ public class SmallestMultiple {
 			}
 		}
 		return true;
+	}
+
+	public static void main(String[] args) {
+		Problem05 SM = new Problem05();
+		System.out.println(SM.sm(20));
 	}
 }
