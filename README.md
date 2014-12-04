@@ -24,6 +24,7 @@ I am @ Problem 16 at the moment
 |   Problem18   | Maximum path sum I |  https://projecteuler.net/problem=18  | 2014-11-30 3:45 pm |
 |   Problem19   | Counting Sundays  |  https://projecteuler.net/problem=19  | 2014-11-30 5:01 pm |
 |   Problem20   | Factorial digit sum  |  https://projecteuler.net/problem=20  | 2014-11-30 4:30 pm |
+|   Problem21   | Amicable numbers |  https://projecteuler.net/problem=21  | 2014-11-03 10:20 pm |
 
 
 
