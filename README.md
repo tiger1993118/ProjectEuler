@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 22 at the moment
+I am @ Problem 24 at the moment
 
 
 
@@ -33,6 +33,7 @@ I am @ Problem 22 at the moment
 |   Problem19   | Counting Sundays  |  https://projecteuler.net/problem=19  | 2014-11-30 5:01 pm |
 |   Problem20   | Factorial digit sum  |  https://projecteuler.net/problem=20  | 2014-11-30 4:30 pm |
 |   Problem21   | Amicable numbers |  https://projecteuler.net/problem=21  | 2014-11-03 10:20 pm |
+|   Problem23   | Non-abundant sums |  https://projecteuler.net/problem=23  | 2014-11-04 02:13 am |
 
 
 
