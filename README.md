@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 16 at the moment
+I am @ Problem 22 at the moment
 
 
 
@@ -14,6 +14,14 @@ I am @ Problem 16 at the moment
 | ------------- | ------------- | ------------- | ------------- |
 |   Problem01    | Multiples of 3 and 5 |  https://projecteuler.net/problem=1  | 2014-11-27 9:52 pm |
 |   Problem02   | Even Fibonacci numbers  |  https://projecteuler.net/problem=2  | 2014-11-27 10:25 pm |
+|   Problem03   | Largest prime factor  |  https://projecteuler.net/problem=3  | 2014-12-03 11:35 pm |
+|   Problem04   | Largest palindrome product  |  https://projecteuler.net/problem=4  | 2014-12-03 11:35 pm |
+|   Problem05   | Smallest multiple  |  https://projecteuler.net/problem=5  | 2014-12-03 11:35 pm |
+|   Problem06   | Sum square difference  |  https://projecteuler.net/problem=6  | 2014-12-03 11:35 pm |
+|   Problem07   | 10001st prime  |  https://projecteuler.net/problem=7  | 2014-12-03 11:35 pm |
+|   Problem08   | Largest product in a series  |  https://projecteuler.net/problem=8  | 2014-12-03 11:35 pm |
+|   Problem09   | Special Pythagorean triplet  |  https://projecteuler.net/problem=9  | 2014-12-03 11:35 pm |
+|   Problem10   | Summation of primes  |  https://projecteuler.net/problem=10  | 2014-12-03 11:35 pm |
 |   Problem11   | Largest product in a grid  |  https://projecteuler.net/problem=11  | 2014-11-28 00:00 am |
 |   Problem12   | Highly divisible triangular number  |  https://projecteuler.net/problem=12  | 2014-11-27 10:10 pm |
 |   Problem13   | Large Sum  |  https://projecteuler.net/problem=13  | 2014-11-29 4:45 pm |
