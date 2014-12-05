@@ -44,7 +44,7 @@ import java.util.Set;
  * @author Tiger yi
  * 
  */
-public class Problem22 {
+public class Problem23 {
 	public static final Integer limit = 28124;
 
 	public boolean[] isPrime;
@@ -57,7 +57,7 @@ public class Problem22 {
 
 	public List<Integer> abundants;
 
-	public Problem22() {
+	public Problem23() {
 		isPrime = new boolean[limit];
 		primes = new ArrayList<Integer>();
 		sumOfDivisor = new Integer[limit];
@@ -158,7 +158,7 @@ public class Problem22 {
 	}
 
 	public static void main(String[] args) {
-		Problem22 P22 = new Problem22();
+		Problem23 P22 = new Problem23();
 		System.out.println(P22.nonAbundantSum());
 	}
 }
