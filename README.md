@@ -34,6 +34,9 @@ I am @ Problem 24 at the moment
 |   Problem20   | Factorial digit sum  |  https://projecteuler.net/problem=20  | 2014-11-30 4:30 pm |
 |   Problem21   | Amicable numbers |  https://projecteuler.net/problem=21  | 2014-11-03 10:20 pm |
 |   Problem23   | Non-abundant sums |  https://projecteuler.net/problem=23  | 2014-11-04 02:13 am |
+|   Problem24   | Lexicographic permutations |  https://projecteuler.net/problem=24  | 2014-11-04 11:31 pm |
+|   Problem25   | 1000-digit Fibonacci number |  https://projecteuler.net/problem=25  | 2014-11-05 00:38 am |
+|   Problem26   | Reciprocal cycles |  https://projecteuler.net/problem=26  | 2014-11-05 01:34 am |
 
 
 
