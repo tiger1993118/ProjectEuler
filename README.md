@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 24 at the moment
+I am @ Problem 28 at the moment
 
 
 
@@ -37,7 +37,7 @@ I am @ Problem 24 at the moment
 |   Problem24   | Lexicographic permutations |  https://projecteuler.net/problem=24  | 2014-12-04 11:31 pm |
 |   Problem25   | 1000-digit Fibonacci number |  https://projecteuler.net/problem=25  | 2014-12-05 00:38 am |
 |   Problem26   | Reciprocal cycles |  https://projecteuler.net/problem=26  | 2014-12-05 01:34 am |
-|   Problem27   | Reciprocal cycles |  https://projecteuler.net/problem=27  | 2014-12-06 00:15 am |
+|   Problem27   | Quadratic primes |  https://projecteuler.net/problem=27  | 2014-12-06 00:15 am |
 
 
 
