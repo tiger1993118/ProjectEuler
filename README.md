@@ -32,11 +32,12 @@ I am @ Problem 24 at the moment
 |   Problem18   | Maximum path sum I |  https://projecteuler.net/problem=18  | 2014-11-30 3:45 pm |
 |   Problem19   | Counting Sundays  |  https://projecteuler.net/problem=19  | 2014-11-30 5:01 pm |
 |   Problem20   | Factorial digit sum  |  https://projecteuler.net/problem=20  | 2014-11-30 4:30 pm |
-|   Problem21   | Amicable numbers |  https://projecteuler.net/problem=21  | 2014-11-03 10:20 pm |
-|   Problem23   | Non-abundant sums |  https://projecteuler.net/problem=23  | 2014-11-04 02:13 am |
-|   Problem24   | Lexicographic permutations |  https://projecteuler.net/problem=24  | 2014-11-04 11:31 pm |
-|   Problem25   | 1000-digit Fibonacci number |  https://projecteuler.net/problem=25  | 2014-11-05 00:38 am |
-|   Problem26   | Reciprocal cycles |  https://projecteuler.net/problem=26  | 2014-11-05 01:34 am |
+|   Problem21   | Amicable numbers |  https://projecteuler.net/problem=21  | 2014-12-03 10:20 pm |
+|   Problem23   | Non-abundant sums |  https://projecteuler.net/problem=23  | 2014-12-04 02:13 am |
+|   Problem24   | Lexicographic permutations |  https://projecteuler.net/problem=24  | 2014-12-04 11:31 pm |
+|   Problem25   | 1000-digit Fibonacci number |  https://projecteuler.net/problem=25  | 2014-12-05 00:38 am |
+|   Problem26   | Reciprocal cycles |  https://projecteuler.net/problem=26  | 2014-12-05 01:34 am |
+|   Problem27   | Reciprocal cycles |  https://projecteuler.net/problem=27  | 2014-12-06 00:15 am |
 
 
 
