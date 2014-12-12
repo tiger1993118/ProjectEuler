@@ -10,8 +10,8 @@ I am @ Problem 31 at the moment
 
 
 
-|   Problem #   | Problem Name  | Problem Link  |  Solved Time  | 
-| ------------- | ------------- | ------------- | ------------- |
+|   Problem #   | Problem Name  | Problem Link  |  Solved Date  |  Solved Time  |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
 |   Problem01    | Multiples of 3 and 5 |  https://projecteuler.net/problem=1  | 2014-11-27 9:52 pm |
 |   Problem02   | Even Fibonacci numbers  |  https://projecteuler.net/problem=2  | 2014-11-27 10:25 pm |
 |   Problem03   | Largest prime factor  |  https://projecteuler.net/problem=3  | 2014-12-03 11:35 pm |
@@ -41,6 +41,10 @@ I am @ Problem 31 at the moment
 |   Problem28   | Number spiral diagonals |  https://projecteuler.net/problem=28  | 2014-12-08 06:00 am |
 |   Problem29   | Distinct powers |  https://projecteuler.net/problem=29  | 2014-12-08 07:01 am |
 |   Problem30   | Digit fifth powers |  https://projecteuler.net/problem=30  | 2014-12-08 08:31 am |
+|   Problem31   | Coin sums |  https://projecteuler.net/problem=31  | 2014-12-12 00:05 am | 0h15m21s |
+|   Problem32   | Pandigital products |  https://projecteuler.net/problem=32  | 2014-12-12 01:27 am | 1h4m50s |
+|   Problem33   | Digit cancelling fractions |  https://projecteuler.net/problem=33  | 2014-12-12 02:24 am | 0h47m15s |
+|   Problem34   | Digit factorials |  https://projecteuler.net/problem=34  | 2014-12-12 03:01 am | 0h32m31s |
 
 
 
