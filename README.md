@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 37 at the moment
+I am @ Problem 41 at the moment
 
 
 
@@ -50,6 +50,7 @@ I am @ Problem 37 at the moment
 |   Problem37   | Truncatable primes |  https://projecteuler.net/problem=37  | 2014-12-12 03:57 pm | 0h22m13s |
 |   Problem38   | Pandigital multiples |  https://projecteuler.net/problem=38  | 2014-12-12 04:37 pm | 0h11m37s |
 |   Problem39   | Integer right triangles |  https://projecteuler.net/problem=39  | 2014-12-12 05:20 pm | 0h08m59s |
+|   Problem40   | Champernowne's constant |  https://projecteuler.net/problem=40  | 2014-12-12 06:15 pm | 0h27m05s |
 
 
 
