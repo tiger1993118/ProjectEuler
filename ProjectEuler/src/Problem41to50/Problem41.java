@@ -16,6 +16,18 @@ import java.util.Set;
  * 
  * What is the largest n-digit pandigital prime that exists?
  * 
+ * Observation : the possible largest pandigital number is nine-digit number
+ * includes 1 to 9. But for every nine-digit number that is pandigital, it must
+ * not be a prime because it could be divided by 3.(a number could be divided by
+ * 3 if only if its sum of every digits could be divided by 3). Same goes with
+ * eight-digit pandigital number which could be divided by 3 as well. So we
+ * could limit our aim number to seven digits.
+ * 
+ * Solution : First find out all the prime number below 7654322(because the
+ * largest seven-digit pandigital number is 7654321). Then, we start our loop
+ * from 7654321, check if it is a seven-digit pandigital number and a prime.
+ * First number satisfy these two conditions, is the largest pandigital prime.
+ * 
  * @author Tiger yi
  * 
  */
