@@ -54,6 +54,7 @@ I am @ Problem 44 at the moment
 |   Problem41   | Pandigital prime |  https://projecteuler.net/problem=41  | 2014-12-16 11:01 pm | 0h18m13s |
 |   Problem42   | Coded triangle numbers |  https://projecteuler.net/problem=42  | 2014-12-16 11:23 pm | 0h14m00s |
 |   Problem43   | Sub-string divisibility |  https://projecteuler.net/problem=43  | 2014-12-16 12:45 pm | 1h16m18s |
+|   Problem44   | Pentagon numbers |  https://projecteuler.net/problem=44  | 2014-12-17 12:42 am | 0h52m22s |
 
 
 
