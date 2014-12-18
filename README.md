@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 50 at the moment
+I am @ Problem 51 at the moment
 
 
 
@@ -60,6 +60,7 @@ I am @ Problem 50 at the moment
 |   Problem47   | Distinct primes factors |  https://projecteuler.net/problem=47  | 2014-12-18 02:00 am | 0h23m23s |
 |   Problem48   | Self powers |  https://projecteuler.net/problem=48  | 2014-12-18 02:22 am | 0h05m54s |
 |   Problem49   | Prime permutations |  https://projecteuler.net/problem=49  | 2014-12-18 03:02 am | 0h35m47s |
+|   Problem50   | Consecutive prime sum |  https://projecteuler.net/problem=50  | 2014-12-18 03:24 am | 0h12m49s |
 
 
 
