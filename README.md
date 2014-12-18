@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 46 at the moment
+I am @ Problem 47 at the moment
 
 
 
@@ -56,6 +56,7 @@ I am @ Problem 46 at the moment
 |   Problem43   | Sub-string divisibility |  https://projecteuler.net/problem=43  | 2014-12-16 12:45 pm | 1h16m18s |
 |   Problem44   | Pentagon numbers |  https://projecteuler.net/problem=44  | 2014-12-17 12:42 am | 0h52m22s |
 |   Problem45   | Triangular, pentagonal, hexagonal |  https://projecteuler.net/problem=45  | 2014-12-17 01:38 pm | 0h29m41s |
+|   Problem46   | Goldbach's other conjecture |  https://projecteuler.net/problem=46  | 2014-12-17 10:28 pm | 0h19m46s |
 
 
 
