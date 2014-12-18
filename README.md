@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 49 at the moment
+I am @ Problem 50 at the moment
 
 
 
@@ -59,6 +59,7 @@ I am @ Problem 49 at the moment
 |   Problem46   | Goldbach's other conjecture |  https://projecteuler.net/problem=46  | 2014-12-17 10:28 pm | 0h19m46s |
 |   Problem47   | Distinct primes factors |  https://projecteuler.net/problem=47  | 2014-12-18 02:00 am | 0h23m23s |
 |   Problem48   | Self powers |  https://projecteuler.net/problem=48  | 2014-12-18 02:22 am | 0h05m54s |
+|   Problem49   | Prime permutations |  https://projecteuler.net/problem=49  | 2014-12-18 03:02 am | 0h35m47s |
 
 
 
