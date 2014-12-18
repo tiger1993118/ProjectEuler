@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 48 at the moment
+I am @ Problem 49 at the moment
 
 
 
@@ -58,6 +58,7 @@ I am @ Problem 48 at the moment
 |   Problem45   | Triangular, pentagonal, hexagonal |  https://projecteuler.net/problem=45  | 2014-12-17 01:38 pm | 0h29m41s |
 |   Problem46   | Goldbach's other conjecture |  https://projecteuler.net/problem=46  | 2014-12-17 10:28 pm | 0h19m46s |
 |   Problem47   | Distinct primes factors |  https://projecteuler.net/problem=47  | 2014-12-18 02:00 am | 0h23m23s |
+|   Problem48   | Self powers |  https://projecteuler.net/problem=48  | 2014-12-18 02:22 am | 0h05m54s |
 
 
 
