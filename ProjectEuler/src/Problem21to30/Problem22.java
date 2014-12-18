@@ -9,6 +9,7 @@ package Problem21to30;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -19,20 +20,19 @@ public class Problem22 {
 		List<String> names = readFile();
 		Collections.sort(names);
 
-		int total = 0;
+		BigInteger total = new BigInteger("0");
 		for (int i = 0; i < names.size(); i++) {
 			String current = names.get(i);
 			int score = 0;
 			for (int is = 0; is < current.length(); is++) {
 				if (current.charAt(is) != '"') {
 					int a = (int) current.charAt(is) - 64;
-					System.out.println(current.charAt(is) + "-" + a);
 					score += a;
 				}
 			}
+			System.out.println(current + score + "-" + (i + 1) + "-" + score * (i + 1));
 			score = score * (i + 1);
-			System.out.println(current + score + "-" + (i + 1) + "-" + score);
-			total += score;
+			total = total.add(BigInteger.valueOf(score));
 
 		}
 		System.out.println(total);
