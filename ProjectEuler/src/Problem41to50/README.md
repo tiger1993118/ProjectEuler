@@ -1,5 +1,7 @@
 This is a package include classes that solved problems from 41 to 50
 
+|   Problem #   | Problem Name  | Problem Link  |  Solved Date  |  Solved Time  |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
 |   Problem41   | Pandigital prime |  https://projecteuler.net/problem=41  | 2014-12-16 11:01 pm | 0h18m13s |
 |   Problem42   | Coded triangle numbers |  https://projecteuler.net/problem=42  | 2014-12-16 11:23 pm | 0h14m00s |
 |   Problem43   | Sub-string divisibility |  https://projecteuler.net/problem=43  | 2014-12-16 12:45 pm | 1h16m18s |
