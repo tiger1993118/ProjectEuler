@@ -61,6 +61,7 @@ I am @ Problem 51 at the moment
 |   Problem48   | Self powers |  https://projecteuler.net/problem=48  | 2014-12-18 02:22 am | 0h05m54s |
 |   Problem49   | Prime permutations |  https://projecteuler.net/problem=49  | 2014-12-18 03:02 am | 0h35m47s |
 |   Problem50   | Consecutive prime sum |  https://projecteuler.net/problem=50  | 2014-12-18 03:24 am | 0h12m49s |
+|   Problem51   | Prime digit replacements |  https://projecteuler.net/problem=51  | 2014-12-19 01:55 am | 01h07m54s |
 
 
 
