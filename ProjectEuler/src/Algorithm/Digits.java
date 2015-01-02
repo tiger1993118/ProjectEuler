@@ -16,6 +16,10 @@ public class Digits {
 		return sum;
 	}
 
+	public static int numOfDigits(String s) {
+		return s.length();
+	}
+
 	public static void main(String[] args) {
 
 	}
