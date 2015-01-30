@@ -6,7 +6,7 @@ This Git repository created by me(Tiger) is my solutions to the problems posted 
 All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
 
 
-I am @ Problem 52 at the moment
+I am @ Problem 59 at the moment
 
 
 |   Problem # Range |  Solved Date Range  |  Solved Time  Range |
