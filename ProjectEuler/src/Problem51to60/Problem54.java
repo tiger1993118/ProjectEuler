@@ -17,11 +17,13 @@ public class Problem54 {
 		Integer total = 0;
 		List<String> raw = File.readFile("raw/p054_poker.txt", "\n");
 		for (String one : raw) {
-			System.out.print(one);
+			// System.out.print(one);
 			List<String> lst = Arrays.asList(one.split(" "));
 			Pair pair = new Pair(lst);
 			total += pair.compare();
+			// System.out.println(pair);
 		}
+		System.out.println(total);
 	}
 
 	public static void main(String[] args) {

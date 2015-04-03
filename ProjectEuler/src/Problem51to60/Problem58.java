@@ -5,7 +5,7 @@
  */
 package Problem51to60;
 
-import Algorithm.Prime;
+import Algorithm.Prime2;
 
 /**
  * 
@@ -44,8 +44,8 @@ import Algorithm.Prime;
 public class Problem58 {
 
 	public void spiralPrimes() {
-		Integer limit = 500000000;
-		Prime.setPrimes(limit);
+
+		Prime2 Prime2 = new Prime2(30000);
 		Integer prime = 3;
 		Integer total = 5;
 		Integer length = 3;
@@ -59,7 +59,7 @@ public class Problem58 {
 			for (int i = 0; i < 3; i++) {
 				current = current - (length - 1);
 
-				if (Prime.isPrime(current))
+				if (Prime2.isPrime(current))
 					prime += 1;
 			}
 		}

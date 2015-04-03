@@ -8,3 +8,4 @@ This is a package include classes that solved problems from 51 to 60
 |   [Problem55](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem55.java)   | [Lychrel numbers](https://projecteuler.net/problem=55)  | 2014-12-29 09:24 pm | 01h26m49s |
 |   [Problem56](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem56.java)   | [Powerful digit sum](https://projecteuler.net/problem=56)  | 2014-12-31 09:31 pm | 00h09m07s |
 |   [Problem57](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem57.java)   | [Square root convergents](https://projecteuler.net/problem=57)  | 2015-01-01 18:12 pm | 00h20m39s |
+|   [Problem58](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem58.java)   | [Spiral primes](https://projecteuler.net/problem=58)  | 2015-01-02 01:30 pm | 02h30m11s |

@@ -16,10 +16,12 @@ public class Prime {
 
 	public static List<Integer> primes;
 
+	public static boolean[] isPrimes;
+	
 	public static void setPrimes(Integer n) {
 		primes = new ArrayList<Integer>();
 
-		boolean[] isPrimes = new boolean[n];
+		isPrimes = new boolean[n];
 		for (Integer i = 0; i < n; i++) {
 			isPrimes[i] = true;
 		}
@@ -35,6 +37,14 @@ public class Prime {
 
 	}
 
+	public static boolean[] getIsPrimes() {
+		return isPrimes;
+	}
+
+	public static List<Integer> getPrimes() {
+		return primes;
+	}
+
 	public static boolean isPrime(Integer n) {
 		for (Integer i : primes) {
 			if (i > n / 2) {
@@ -47,7 +57,8 @@ public class Prime {
 	}
 
 	public static boolean isPrime2(Integer n) {
-		for (Integer i = 2; i < n / 2; i++) {
+		int root = (int) Math.sqrt(n + 1);
+		for (Integer i = 2; i <= root; i++) {
 			if (n % i == 0)
 				return false;
 		}

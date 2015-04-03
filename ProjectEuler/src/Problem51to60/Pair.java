@@ -91,67 +91,158 @@ public class Pair {
 
 	}
 
-	public int getRank(Map<Integer, Integer> values, Map<Integer, Integer> suits) {
-		Integer score;
-		Integer[] scores = new Integer[6];
-		for (Integer i = 0; i < 6; i++)
-			scores[i] = 0;
+	public List<Integer> getRank(Map<Integer, Integer> values,
+			Map<Integer, Integer> suits) {
+		List<Integer> scores = new ArrayList<Integer>();
+
 		List<Integer> valueKeys = new ArrayList<Integer>();
 		valueKeys.addAll(values.keySet());
 		Collections.sort(valueKeys);
+		Collections.reverse(valueKeys);
 		Set<Integer> suitKeys = suits.keySet();
 		// Royal Flush
 		if (valueKeys.size() == 5 && suitKeys.size() == 1
 				&& valueKeys.contains(10) && valueKeys.contains(11)
 				&& valueKeys.contains(12) && valueKeys.contains(13)
-				&& valueKeys.contains(14))
-			score = 10;
+				&& valueKeys.contains(14)) {
+			scores.add(10);
+			for (int key : valueKeys) {
+				scores.add(key);
+				break;
+			}
+		}
 		// Straight Flush
 		else if (valueKeys.size() == 5 && suitKeys.size() == 1
-				&& valueKeys.get(1) - valueKeys.get(0) == 1
-				&& valueKeys.get(2) - valueKeys.get(1) == 1
-				&& valueKeys.get(3) - valueKeys.get(2) == 1
-				&& valueKeys.get(4) - valueKeys.get(3) == 1)
-			score = 9;
+				&& valueKeys.get(0) - valueKeys.get(1) == 1
+				&& valueKeys.get(1) - valueKeys.get(2) == 1
+				&& valueKeys.get(2) - valueKeys.get(3) == 1
+				&& valueKeys.get(3) - valueKeys.get(4) == 1) {
+			scores.add(9);
+			for (int key : valueKeys) {
+				scores.add(key);
+				break;
+			}
+		}
 		// Four of a Kind
-		else if (valueKeys.size() == 2 && values.values().contains(4))
-			score = 8;
+		else if (valueKeys.size() == 2 && values.values().contains(4)) {
+			scores.add(8);
+			for (int key : valueKeys) {
+				if (values.get(key) == 4) {
+					scores.add(key);
+					break;
+				}
+			}
+			for (int key : valueKeys) {
+				if (values.get(key) == 1) {
+					scores.add(key);
+					break;
+				}
+			}
+		}
 		// Full House
-		else if (valueKeys.size() == 2 && values.values().contains(3))
-			score = 7;
+		else if (valueKeys.size() == 2 && values.values().contains(3)) {
+			scores.add(7);
+			for (int key : valueKeys) {
+				if (values.get(key) == 3) {
+					scores.add(key);
+					break;
+				}
+			}
+
+			for (int key : valueKeys) {
+				if (values.get(key) == 2) {
+					scores.add(key);
+					break;
+				}
+			}
+		}
 		// Flush
-		else if (suitKeys.size() == 1)
-			score = 6;
+		else if (suitKeys.size() == 1) {
+			scores.add(6);
+			for (int key : valueKeys) {
+				scores.add(key);
+			}
+		}
 		// Straight
 		else if (valueKeys.size() == 5
-				&& valueKeys.get(1) - valueKeys.get(0) == 1
-				&& valueKeys.get(2) - valueKeys.get(1) == 1
-				&& valueKeys.get(3) - valueKeys.get(2) == 1
-				&& valueKeys.get(4) - valueKeys.get(3) == 1)
-			score = 5;
-		// Three of a Kind
-		else if (valueKeys.size() == 3 && values.values().contains(3))
-			score = 4;
-		// Two Pairs
-		else if (valueKeys.size() == 3 && values.values().contains(2))
-			score = 3;
-		// One Pair
-		else if (valueKeys.size() == 4 && values.values().contains(2))
-			score = 2;
-		else {
-			score = 1;
-			scores[0] = 1;
+				&& valueKeys.get(0) - valueKeys.get(1) == 1
+				&& valueKeys.get(1) - valueKeys.get(2) == 1
+				&& valueKeys.get(2) - valueKeys.get(3) == 1
+				&& valueKeys.get(3) - valueKeys.get(4) == 1) {
+			scores.add(5);
+			for (int key : valueKeys) {
+				scores.add(key);
+			}
 		}
-		return score;
+		// Three of a Kind
+		else if (valueKeys.size() == 3 && values.values().contains(3)) {
+			scores.add(4);
+			for (int key : valueKeys) {
+				if (values.get(key) == 3) {
+					scores.add(key);
+					break;
+				}
+			}
+			for (int key : valueKeys) {
+				if (values.get(key) != 3) {
+					scores.add(key);
+				}
+
+			}
+		}
+		// Two Pairs
+		else if (valueKeys.size() == 3 && values.values().contains(2)) {
+			scores.add(3);
+			for (int key : valueKeys) {
+				if (values.get(key) == 2) {
+					scores.add(key);
+				}
+			}
+			for (int key : valueKeys) {
+				if (values.get(key) != 2) {
+					scores.add(key);
+				}
+			}
+		}
+		// One Pair
+		else if (valueKeys.size() == 4 && values.values().contains(2)) {
+			scores.add(2);
+			for (int key : valueKeys) {
+				if (values.get(key) == 2) {
+					scores.add(key);
+					break;
+				}
+			}
+			for (int key : valueKeys) {
+				if (values.get(key) != 2) {
+					scores.add(key);
+				}
+			}
+		}
+		// High Card
+		else {
+			scores.add(1);
+			for (int key : valueKeys) {
+				scores.add(key);
+			}
+
+		}
+		return scores;
 	}
 
 	public int compare() {
-		Integer s1 = getRank(values1, suits1);
-		Integer s2 = getRank(values2, suits2);
-		if (s1 > s2)
+		List<Integer> s1 = getRank(values1, suits1);
+		List<Integer> s2 = getRank(values2, suits2);
+		if (s1.get(0) > s2.get(0))
 			return 1;
-		else if (s1 == s2) {
-
+		else if (s1.get(0) == s2.get(0)) {
+			for (int i = 1; i < s1.size(); i++) {
+				if (s1.get(i) > s2.get(i)) {
+					return 1;
+				} else if (s1.get(i) < s2.get(i)) {
+					return 0;
+				}
+			}
 			return 0;
 		} else {
 			return 0;
@@ -159,7 +250,7 @@ public class Pair {
 	}
 
 	public String toString() {
-		return values2.toString();
+		return null;
 	}
 
 	public static void main(String[] args) {
