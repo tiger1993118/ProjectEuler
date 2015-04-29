@@ -26,7 +26,7 @@ public class Problem60 {
 	public void primePairSets() {
 		Prime2 prime2 = new Prime2(5000000);
 
-		Integer[] exists = { 3, 7, 107, 673 };
+		Integer[] exists = { 11, 23, 743, 1871 };
 		for (Integer prime : prime2.getPrimes()) {
 			System.out.print(prime + "-");
 			boolean valid = true;

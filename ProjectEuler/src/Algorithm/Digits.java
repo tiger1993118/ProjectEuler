@@ -20,8 +20,13 @@ public class Digits {
 		return s.length();
 	}
 
-	public static void main(String[] args) {
+	public static int lastNDigits(Integer i, Integer n) {
+		String s = i.toString();
+		return Integer.valueOf(s.substring(s.length() - 2, s.length()));
+	}
 
+	public static void main(String[] args) {
+		System.out.println(lastNDigits(33123, 2));
 	}
 
 }
