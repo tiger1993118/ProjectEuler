@@ -22,7 +22,7 @@ public class Digits {
 
 	public static int lastNDigits(Integer i, Integer n) {
 		String s = i.toString();
-		return Integer.valueOf(s.substring(s.length() - 2, s.length()));
+		return Integer.valueOf(s.substring(s.length() - n, s.length()));
 	}
 
 	public static void main(String[] args) {

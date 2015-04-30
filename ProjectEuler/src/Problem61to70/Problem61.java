@@ -13,9 +13,6 @@ import Algorithm.Polygonal;
 
 /**
  * @author Xiu Tiger Yi
- * 
- * time : 01:58:15
- * start : 2015-04-26 20:25
  */
 public class Problem61 {
 

@@ -9,9 +9,6 @@ import java.math.BigInteger;
 
 /**
  * @author Xiu Tiger Yi
- * 
- * time : 00:15:45
- * start : 2015-04-25 11:27
  */
 public class Problem63 {
 

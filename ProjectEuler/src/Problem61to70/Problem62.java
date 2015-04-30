@@ -11,8 +11,6 @@ import java.util.Map;
 
 /**
  * @author Xiu Tiger Yi
- *
- *         time : 00:46:24 start : 2015-04-26 11:44
  */
 public class Problem62 {
 
