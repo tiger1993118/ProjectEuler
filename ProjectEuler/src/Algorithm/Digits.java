@@ -24,6 +24,11 @@ public class Digits {
 		String s = i.toString();
 		return Integer.valueOf(s.substring(s.length() - n, s.length()));
 	}
+	
+	public static int lastNDigits(Long i, Integer n) {
+		String s = i.toString();
+		return Integer.valueOf(s.substring(s.length() - n, s.length()));
+	}
 
 	public static void main(String[] args) {
 		System.out.println(lastNDigits(33123, 2));

@@ -5,7 +5,6 @@
  */
 package Algorithm;
 
-
 /**
  * @author Xiu Tiger Yi
  *
@@ -16,16 +15,22 @@ public class Prime2 {
 
 	int[] primes;
 
+	boolean[] isPrimes;
+
 	public Prime2(int n) {
 		primes = new int[n + 1];
-
+		isPrimes = new boolean[2000000000];
 		primes[1] = 2;
+		isPrimes[2] = true;
 		primes[2] = 3;
+		isPrimes[3] = true;
 
 		int curr = 3;
 		for (int i = 3; i < n + 1; i++) {
 			curr = primes[i] = nextPrime(curr);
+			isPrimes[curr] = true;
 		}
+		System.out.println(primes[n - 1]);
 	}
 
 	public int nextPrime(int n) {
@@ -68,5 +73,9 @@ public class Prime2 {
 
 	public int[] getPrimes() {
 		return primes;
+	}
+
+	public boolean[] getIsPrimes() {
+		return isPrimes;
 	}
 }
