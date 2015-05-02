@@ -10,5 +10,5 @@ This is a package include classes that solved problems from 51 to 60
 |   [Problem56](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem56.java)   | [Powerful digit sum](https://projecteuler.net/problem=56)  | 2014-12-31 09:31 pm | 00h09m07s |
 |   [Problem57](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem57.java)   | [Square root convergents](https://projecteuler.net/problem=57)  | 2015-01-01 18:12 pm | 00h20m39s |
 |   [Problem58](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem58.java)   | [Spiral primes](https://projecteuler.net/problem=58)  | 2015-01-02 01:30 pm | 02h30m11s |
-|   [Problem59](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem59.java)   | [XOR decryption](https://projecteuler.net/problem=59)  |||
+|   [Problem59](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem59.java)   | [XOR decryption](https://projecteuler.net/problem=59)  | 2015-01-03 08:01 pm | 00h31m19s |
 |   [Problem60](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem51to60/Problem60.java)   | [Prime pair sets](https://projecteuler.net/problem=60)  | 2015-05-02 04:41 am | 08h05m10s |
