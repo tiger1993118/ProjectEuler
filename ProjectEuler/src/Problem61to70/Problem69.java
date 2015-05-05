@@ -5,9 +5,7 @@
  */
 package Problem61to70;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import Algorithm.Prime;
 
@@ -35,25 +33,6 @@ public class Problem69 {
 			}
 		}
 		System.out.println(product);
-	}
-
-	public static Map<Integer, Integer> getCF(Integer n) {
-		Integer index = 0;
-		Map<Integer, Integer> ret = new HashMap<Integer, Integer>();
-		while (!isPrime[n]) {
-			while (n % primes.get(index) != 0) {
-				index++;
-			}
-			ret.put(primes.get(index), 0);
-			while (n % primes.get(index) == 0) {
-				n /= primes.get(index);
-				ret.replace(primes.get(index), ret.get(primes.get(index)) + 1);
-
-			}
-		}
-		if (n != 1)
-			ret.put(n, 1);
-		return ret;
 	}
 
 	public static void main(String[] args) {
