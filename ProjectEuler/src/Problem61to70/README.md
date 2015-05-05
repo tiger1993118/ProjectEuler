@@ -11,3 +11,4 @@ This is a package include classes that solved problems from 61 to 70
 |   [Problem67](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem61to70/Problem67.java)   | [Maximum path sum II](https://projecteuler.net/problem=67)  |2015-04-30 02:00 pm|00h38m13s|
 |   [Problem68](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem61to70/Problem68.java)   | [Spiral primes](https://projecteuler.net/problem=68)  |||
 |   [Problem69](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem61to70/Problem69.java)   | [Totient maximum](https://projecteuler.net/problem=69)  |||
+|   [Problem70](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem61to70/Problem70.java)   | [Totient permutation](https://projecteuler.net/problem=70)  |||
