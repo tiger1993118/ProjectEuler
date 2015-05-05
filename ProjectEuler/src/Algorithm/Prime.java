@@ -14,10 +14,10 @@ import java.util.List;
  */
 public class Prime {
 
-	public static List<Integer> primes;
+	static List<Integer> primes;
 
-	public static boolean[] isPrimes;
-	
+	static boolean[] isPrimes;
+
 	public static void setPrimes(Integer n) {
 		primes = new ArrayList<Integer>();
 
