@@ -23,12 +23,13 @@ public class Problem73 {
 		Composite.setComposite(limit);
 		boolean[] isPrime = Prime.getIsPrimes();
 		BigInteger total = new BigInteger("0");
-		for (Integer n = 2; n < limit; n++) {
-			Integer upper = (int) Math.floor(n / 2);
-			Integer lower = (int) Math.floor(n / 3);
+		for (Integer n = 4; n < limit; n++) {
+			Integer upper = (int) Math.floor((double) n / 2.0);
+			Integer lower = (int) Math.ceil((double) n / 3);
 			if (isPrime[n]) {
 				total = total.add(BigInteger.valueOf(upper - lower + 1));
 			} else {
+				Integer count = 0;
 				List<Integer> factors = Composite.getFactors(n);
 				for (Integer i = lower; i <= upper; i++) {
 					boolean isPrimeR = true;
@@ -38,8 +39,10 @@ public class Problem73 {
 							break;
 						}
 					}
-					if (isPrimeR)
+					if (isPrimeR) {
 						total = total.add(BigInteger.valueOf(1));
+						count++;
+					}
 				}
 			}
 		}
