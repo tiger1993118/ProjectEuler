@@ -22,7 +22,7 @@ public class Prime {
 		primes = new ArrayList<Integer>();
 
 		isPrimes = new boolean[n];
-		for (Integer i = 0; i < n; i++) {
+		for (Integer i = 2; i < n; i++) {
 			isPrimes[i] = true;
 		}
 
