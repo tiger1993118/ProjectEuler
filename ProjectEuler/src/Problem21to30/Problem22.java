@@ -23,16 +23,16 @@ public class Problem22 {
 		BigInteger total = new BigInteger("0");
 		for (int i = 0; i < names.size(); i++) {
 			String current = names.get(i);
-			int score = 0;
-			for (int is = 0; is < current.length(); is++) {
-				if (current.charAt(is) != '"') {
-					int a = (int) current.charAt(is) - 64;
-					score += a;
+			BigInteger score = new BigInteger("0");
+			for (char c : current.toCharArray()) {
+				int a = (int) c - 64;
+				if (a > 0 && a < 27) {
+					score = score.add(BigInteger.valueOf(a));
 				}
 			}
-			System.out.println(current + score + "-" + (i + 1) + "-" + score * (i + 1));
-			score = score * (i + 1);
-			total = total.add(BigInteger.valueOf(score));
+			//System.out.println(current + score + "-" + (i + 1));
+			score = score.multiply(BigInteger.valueOf((i + 1)));
+			total = total.add(score);
 
 		}
 		System.out.println(total);
