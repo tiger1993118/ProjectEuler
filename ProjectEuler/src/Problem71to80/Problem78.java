@@ -5,44 +5,91 @@
  */
 package Problem71to80;
 
-import java.math.BigInteger;
-
 /**
  * @author Xiu Tiger Yi
  *
  */
 public class Problem78 {
-
-	static BigInteger[][] counts = null;
+	static int limit = 10_0000;
+	static int mill = 100_0000;
 
 	public static void coinPartitions() {
-		int limit = 100_0000;
-		counts = new BigInteger[limit][];
-		counts[1] = new BigInteger[2];
-		counts[1][1] = BigInteger.valueOf(1);
-		BigInteger ret = new BigInteger("0");
-
+		int[] tracks = new int[limit];
+		tracks[0] = 1;
+		tracks[1] = 1;
+		int[][] counts = new int[limit][];
+		counts[0] = new int[1];
+		counts[0][0] = 1;
+		counts[1] = new int[2];
+		counts[1][0] = 0;
+		counts[1][1] = 1;
+		int ret = 0;
 		for (Integer n = 2; n < limit; n++) {
-			counts[n] = new BigInteger[n + 1];
-			counts[n][n] = BigInteger.valueOf(1);
+			ret = 0;
+			counts[n] = new int[n];
+			int[] here = counts[n];
 
-			BigInteger added = new BigInteger("1");
-
-			for (Integer i = 1; i < n; i++) {
-
-				Integer rest = n - i;
-				Integer bound = Math.min(n - i, i);
-				for (Integer first = 2; first <= i / 2; first++) {
-					for (Integer i2 = 1; i2 <= bound; i2++) {
-						// added = added.add(last[i2]);
-					}
-				}
-				// counts[n][i] = total;
-				ret = ret.add(added);
+			for (Integer i = 1; i < n / 2.0; i++) {
+				ret += counts[n - i][i];
+				counts[n - i][i] = 0;
+				ret %= mill;
+				here[i] = ret;
 			}
 
-			if (ret.mod(BigInteger.valueOf(100_000))
-					.equals(new BigInteger("0"))) {
+			for (Integer i = (n + 1) / 2; i < n; i++) {
+				ret += tracks[n - i];
+				ret %= mill;
+				here[i] = ret;
+			}
+			ret++;
+
+			if (n % 2 == 1) {
+				counts[n / 2] = null;
+			}
+			tracks[n] = ret;
+
+			if (ret % mill == 0) {
+				System.out.println("-----" + n + "-" + ret);
+				break;
+			}
+			System.out.println(n + "-" + ret);
+		}
+	}
+
+	public static void coinPartitions2() {
+
+		int[][] counts = new int[limit][];
+		counts[1] = new int[2];
+		counts[1][0] = 0;
+		counts[1][1] = 1;
+
+		Integer ret = 1, incre = 0, curr = 0;
+		for (Integer n = 2; n < limit; n++) {
+			int[] here = new int[n + 1];
+			counts[n] = here;
+			here[0] = 0;
+			int[] last = counts[n - 1];
+			int length = last.length;
+			for (int i = 0; i < length; i++) {
+				here[i + 1] = last[i];
+			}
+
+			for (Integer i = 1; i <= n / 2; i++) {
+				incre = counts[n - i][i];
+				ret += incre;
+				if (ret > mill)
+					ret -= mill;
+				curr = here[i];
+				curr += incre;
+				if (curr > mill)
+					curr -= mill;
+				here[i] = curr;
+			}
+
+			if (n % 2 == 0) {
+				counts[n / 2] = null;
+			}
+			if (ret == 0) {
 				System.out.println(n + "-" + ret);
 				break;
 			}
@@ -50,46 +97,7 @@ public class Problem78 {
 		}
 	}
 
-	// 1-1
-	// 2-2
-	// 3-3
-	// 4-5
-	// 5-7
-	// 6-11
-	// 7-15
-	// 8-22
-	// 9-30
-	// 10-42
-	// 11-56
-	// 12-77
-	// 13-101
-	// 14-135
-	// 15-176
-	// 16-231
-	// 17-297
-	// 18-385
-	// 19-490
-	// 20-627
-	// 21-792
-	// 22-1002
-	// 23-1255
-	// 24-1575
-	// 25-1958
-	// 26-2436
-	// 27-3010
-	// 28-3718
-	// 29-4565
-	// 30-5604
-	// 31-6842
-	// 32-8349
-	// 33-10143
-	// 34-12310
-	// 35-14883
-	// 36-17977
-	// 37-21637
-
 	public static void main(String[] args) {
 		coinPartitions();
 	}
-
 }
