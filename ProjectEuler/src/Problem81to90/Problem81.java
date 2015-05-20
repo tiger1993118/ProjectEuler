@@ -15,8 +15,7 @@ import Algorithm.File;
  */
 public class Problem81 {
 
-	public static void pathSumTwoWays() {
-		String[][] matrix = File.readFile("raw/p081_matrix.txt", "\n", ",");
+	public static BigInteger[][] pathSumTwoWays(String[][] matrix) {
 		BigInteger[][] sumMatrix = new BigInteger[matrix.length][matrix.length];
 		for (Integer irow = matrix.length - 1; irow >= 0; irow--) {
 			for (Integer icol = matrix.length - 1; icol >= 0; icol--) {
@@ -34,10 +33,12 @@ public class Problem81 {
 			}
 		}
 		System.out.println(sumMatrix[0][0]);
+		return sumMatrix;
 	}
 
 	public static void main(String[] args) {
-		pathSumTwoWays();
+		String[][] matrix = File.readFile("raw/p081_matrix.txt", "\n", ",");
+		pathSumTwoWays(matrix);
 	}
 
 }
