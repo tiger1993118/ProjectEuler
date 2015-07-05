@@ -7,4 +7,4 @@
 |   [Problem85](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem81to90/Problem85.java)   | [Counting rectangles](https://projecteuler.net/problem=85)  |2015-06-24 10:10 pm||
 |   [Problem86](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem81to90/Problem86.java)   | [Cuboid route](https://projecteuler.net/problem=86)  |2015-06-25 11:15 pm||
 |   [Problem87](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem81to90/Problem87.java)   | [Prime power triples](https://projecteuler.net/problem=87)  |2015-06-25 10:50 pm||
-|   [Problem87](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem81to90/Problem88.java)   | [Product-sum numbers](https://projecteuler.net/problem=88)  |2015-07-05 00:51 am||
+|   [Problem88](https://github.com/tiger1993118/ProjectEuler/blob/master/ProjectEuler/src/Problem81to90/Problem88.java)   | [Product-sum numbers](https://projecteuler.net/problem=88)  |2015-07-05 00:51 am||
