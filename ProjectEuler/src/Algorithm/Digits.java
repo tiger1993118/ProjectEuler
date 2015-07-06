@@ -17,6 +17,17 @@ public class Digits {
 		return sum;
 	}
 
+	public static Integer digitSquareSum(String s) {
+		Integer sum = 0;
+		for (char c : s.toCharArray()) {
+			if (c != '.') {
+				int i = Character.getNumericValue(c);
+				sum += i * i;
+			}
+		}
+		return sum;
+	}
+
 	public static int numOfDigits(String s) {
 		return s.length();
 	}
