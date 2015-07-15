@@ -11,7 +11,8 @@ import Algorithm.File;
 
 /**
  * @author Xiu Tiger Yi
- *
+ * 
+ *         log_10^a^b = b*log_10^a
  */
 public class Problem99 {
 
@@ -20,6 +21,7 @@ public class Problem99 {
 		String[] r1 = rows.get(0).trim().split(",");
 		Integer cB = Integer.valueOf(r1[0]);
 		Integer cE = Integer.valueOf(r1[1]);
+		double curr = cE * Math.log10(cB);
 		Integer nB, nE;
 		Integer max = 1;
 		Integer line = 0;
@@ -29,28 +31,10 @@ public class Problem99 {
 			String[] number = row.trim().split(",");
 			nB = Integer.valueOf(number[0]);
 			nE = Integer.valueOf(number[1]);
-			// cB^cE & nB^nE
-			if (cB <= nB && cE <= nE) {
-				cB = nB;
-				cE = nE;
-			} else if (cB <= nB && cE >= nE) {
-				Double x = (double) nE / (cE - nE);
-				Double result = Math.pow((double) cB / nB, x);
-				result *= cB;
-				if (result < 1) {
-					cB = nB;
-					cE = nE;
-					max = line;
-				}
-			} else if (cB >= nB && cE <= nE) {
-				Double x = (double) cE / (nE - cE);
-				Double result = Math.pow((double) nB / cB, x);
-				result *= nB;
-				if (result > 1) {
-					cB = nB;
-					cE = nE;
-					max = line;
-				}
+			double next = nE * Math.log10(nB);
+			if (next > curr) {
+				curr = next;
+				max = line;
 			}
 		}
 		System.out.println(max);
