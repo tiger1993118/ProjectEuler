@@ -60,7 +60,9 @@ public class File {
 		} finally {
 
 		}
+		
 		String[] raws = everything.split(delimiter1);
+		
 		String[][] ret = new String[raws.length][];
 		for (Integer i = 0; i < raws.length; i++) {
 			ret[i] = raws[i].trim().split(delimiter2);
