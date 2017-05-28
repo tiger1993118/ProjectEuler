@@ -7,8 +7,8 @@ package part1.problem071to080;
 
 import java.util.List;
 
-import Algorithm.Composite;
-import Algorithm.Prime;
+import algorithm.Composite;
+import algorithm.Prime;
 
 /**
  * @author Xiu Tiger Yi

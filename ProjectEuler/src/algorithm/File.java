@@ -4,7 +4,7 @@ TODO
 Created on2014-12-29
 10:35:22 PM
  */
-package Algorithm;
+package algorithm;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -8,7 +8,7 @@ package part1.problem061to070;
 import java.util.ArrayList;
 import java.util.List;
 
-import Algorithm.File;
+import algorithm.File;
 
 /**
  * @author Xiu Tiger Yi

@@ -9,7 +9,7 @@ package part1.problem051to060;
 import java.util.Arrays;
 import java.util.List;
 
-import Algorithm.File;
+import algorithm.File;
 
 public class Problem54 {
 

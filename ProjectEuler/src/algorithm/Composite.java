@@ -3,7 +3,7 @@
  @author Xiu Yi Tiger yixiu17@gmail.com
  Created on May 5, 2015 at 2:44:05 AM
  */
-package Algorithm;
+package algorithm;
 
 import java.util.ArrayList;
 import java.util.HashMap;

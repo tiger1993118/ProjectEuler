@@ -3,7 +3,7 @@
  @author Xiu Yi Tiger yixiu17@gmail.com
  Created on Apr 26, 2015 at 1:31:40 AM
  */
-package Algorithm;
+package algorithm;
 
 /**
  * @author Xiu Tiger Yi

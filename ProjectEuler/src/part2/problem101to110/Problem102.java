@@ -1,7 +1,7 @@
 package part2.problem101to110;
 
-import Algorithm.File;
-import Algorithm.Point2D;
+import algorithm.File;
+import algorithm.Point2D;
 
 public class Problem102 {
 	

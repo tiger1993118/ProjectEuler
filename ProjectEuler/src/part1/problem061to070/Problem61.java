@@ -8,8 +8,8 @@ package part1.problem061to070;
 import java.util.ArrayList;
 import java.util.List;
 
-import Algorithm.Digits;
-import Algorithm.Polygonal;
+import algorithm.Digits;
+import algorithm.Polygonal;
 
 /**
  * @author Xiu Tiger Yi

@@ -7,7 +7,7 @@ package part1.problem081to090;
 
 import java.math.BigInteger;
 
-import Algorithm.File;
+import algorithm.File;
 
 /**
  * @author Xiu Tiger Yi

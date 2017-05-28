@@ -9,7 +9,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
-import Algorithm.File;
+import algorithm.File;
 
 /**
  * @author Xiu Tiger Yi

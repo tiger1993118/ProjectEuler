@@ -5,7 +5,7 @@
  */
 package part1.problem051to060;
 
-import Algorithm.Prime2;
+import algorithm.Prime2;
 
 /**
  * 

@@ -7,7 +7,7 @@ package part1.problem071to080;
 
 import java.math.BigDecimal;
 
-import Algorithm.Digits;
+import algorithm.Digits;
 
 /**
  * @author Xiu Tiger Yi

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import Algorithm.Prime2;
+import algorithm.Prime2;
 
 /**
  * @author Xiu Tiger Yi

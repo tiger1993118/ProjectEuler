@@ -8,7 +8,7 @@ package part1.problem051to060;
 
 import java.math.BigInteger;
 
-import Algorithm.Combination;
+import algorithm.Combination;
 
 /**
  * TODO There are exactly ten ways of selecting three from five, 12345:

@@ -4,7 +4,7 @@ TODO
 Created on2014-12-31
 9:25:06 AM
  */
-package Algorithm;
+package algorithm;
 
 public class Digits {
 

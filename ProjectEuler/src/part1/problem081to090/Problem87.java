@@ -8,7 +8,7 @@ package part1.problem081to090;
 import java.util.ArrayList;
 import java.util.List;
 
-import Algorithm.Prime;
+import algorithm.Prime;
 
 /**
  * @author Xiu Tiger Yi

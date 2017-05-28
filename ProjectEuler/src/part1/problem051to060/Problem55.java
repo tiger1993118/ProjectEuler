@@ -8,7 +8,7 @@ package part1.problem051to060;
 
 import java.math.BigInteger;
 
-import Algorithm.Palindromic;
+import algorithm.Palindromic;
 
 /**
  * TODO If we take 47, reverse and add, 47 + 74 = 121, which is palindromic.

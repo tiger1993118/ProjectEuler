@@ -8,7 +8,7 @@ package part1.problem051to060;
 
 import java.math.BigInteger;
 
-import Algorithm.Digits;
+import algorithm.Digits;
 
 /**
  * TODO A googol (10100) is a massive number: one followed by one-hundred zeros;

@@ -5,7 +5,7 @@
  */
 package part1.problem061to070;
 
-import Algorithm.Digits;
+import algorithm.Digits;
 
 /**
  * @author Xiu Tiger Yi

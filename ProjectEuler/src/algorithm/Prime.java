@@ -3,7 +3,7 @@
  @author Xiu Yi Tiger yixiu17@gmail.com
  Created on Jan 1, 2015 at 10:48:35 PM
  */
-package Algorithm;
+package algorithm;
 
 import java.util.ArrayList;
 import java.util.List;

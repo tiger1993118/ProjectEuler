@@ -4,7 +4,7 @@ TODO
 Created on2014-12-21
 3:31:33 PM
  */
-package Algorithm;
+package algorithm;
 
 import java.math.BigInteger;
 

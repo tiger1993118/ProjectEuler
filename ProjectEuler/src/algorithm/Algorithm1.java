@@ -4,7 +4,7 @@ TODO
 Created on2014-12-21
 3:14:23 PM
  */
-package Algorithm;
+package algorithm;
 
 import java.util.HashMap;
 import java.util.Map;

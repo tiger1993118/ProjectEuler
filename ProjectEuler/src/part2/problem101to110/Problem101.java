@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 import org.apache.commons.math3.fraction.BigFraction;
 
-import Algorithm.Matrix;
+import algorithm.Matrix;
 
 public class Problem101 {
 	

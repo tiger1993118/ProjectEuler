@@ -6,7 +6,7 @@ package part1.problem051to060;
 
 import java.math.BigInteger;
 
-import Algorithm.Digits;
+import algorithm.Digits;
 
 /**
  * TODO It is possible to show that the square root of two can be expressed as

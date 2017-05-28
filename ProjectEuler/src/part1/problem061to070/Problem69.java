@@ -7,7 +7,7 @@ package part1.problem061to070;
 
 import java.util.List;
 
-import Algorithm.Prime;
+import algorithm.Prime;
 
 /**
  * @author Xiu Tiger Yi

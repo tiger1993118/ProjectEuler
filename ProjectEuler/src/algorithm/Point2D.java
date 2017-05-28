@@ -1,4 +1,4 @@
-package Algorithm;
+package algorithm;
 
 import org.apache.commons.math3.fraction.BigFraction;
 

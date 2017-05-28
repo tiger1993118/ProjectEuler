@@ -7,7 +7,7 @@ package part1.problem091to100;
 
 import java.util.List;
 
-import Algorithm.File;
+import algorithm.File;
 
 /**
  * @author Xiu Tiger Yi
