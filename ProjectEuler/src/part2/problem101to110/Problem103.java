@@ -1,16 +1,14 @@
 package part2.problem101to110;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Problem103 {
 
 	static int sum = 0;
 
 	public static void solve() {
-		int layer = 7;
+		int layer = 7;// Size of set
 		List<Integer> l = new ArrayList<Integer>();
 		for (int i = 0; i < layer; i++) {
 			l.add(0);
@@ -35,6 +33,7 @@ public class Problem103 {
 		return true;
 	}
 	
+	// Print an Integer Array
 	public static void print_array(int[] a) {
 		System.out.print("[");
 		for (int i = 0; i < a.length; i++) {
@@ -43,64 +42,66 @@ public class Problem103 {
 		System.out.println("]");
 	}
 	
+	// Recursive create different subset of the set, and check the sum corresponding to subset size
+	// Index_list is the indece of the subset we are choosing
 	public static boolean size_check(List<Integer> set, int[] index_list, int size, int curr_layer) {
-		if(curr_layer == size) {
-			if(size == 4) {
-//				print_array(index_list);
+		if(curr_layer == size) {// If already has a subset determined
+			if(size == 4) {// a+d != b+c
 				return (set.get(index_list[0]) + set.get(index_list[3])) != (set.get(index_list[1]) + set.get(index_list[2]));
-			}else if(size == 6) {
-//				print_array(index_list);
+			}else if(size == 6) {// 5 cases: abf, acf, ade, adf, aef
 				return ((set.get(index_list[0]) + set.get(index_list[1]) + set.get(index_list[5])) != (set.get(index_list[2]) + set.get(index_list[3]) + set.get(index_list[4])))
 						&& ((set.get(index_list[0]) + set.get(index_list[2]) + set.get(index_list[5])) != (set.get(index_list[1]) + set.get(index_list[3]) + set.get(index_list[4])))
 						&& ((set.get(index_list[0]) + set.get(index_list[3]) + set.get(index_list[4])) != (set.get(index_list[1]) + set.get(index_list[2]) + set.get(index_list[5])))
 						&& ((set.get(index_list[0]) + set.get(index_list[3]) + set.get(index_list[5])) != (set.get(index_list[1]) + set.get(index_list[2]) + set.get(index_list[4])))
 						&& ((set.get(index_list[0]) + set.get(index_list[4]) + set.get(index_list[5])) != (set.get(index_list[1]) + set.get(index_list[2]) + set.get(index_list[3])));
 			}
-		}else {
+		}else {// If it has not find a complete subset
 			int start;
-			if(curr_layer == 0) {
+			if(curr_layer == 0) {// First 
 				start = 0;
 			}else {// Last value + 1
 				start = index_list[curr_layer-1] + 1;
 			}
 			int limit = set.size() - (size - curr_layer);
-			for(int i = start; i <= limit; i++) {
+			for(int i = start; i <= limit; i++) {// Loop the value 
 				index_list[curr_layer] = i;
-				if(!size_check(set, index_list, size, curr_layer+1)) {
-//					print_array(index_list);
+				if(!size_check(set, index_list, size, curr_layer+1)) {// If one constraint is failed, return false
 					return false;
 				}
 			}
 		}
 		return true;
 	}
-
+	
+	// Check the special subset, different checking methods correspond to different sizes of set
 	public static boolean subset_check(List<Integer> set) {
-		if (!check_second(set)) {
+		if (!check_second(set)) {// Check second condition first
 			return false;
 		}
 
-//		if (set.size() == 4) {// a+d != b+c
-//			return ((set.get(0) + set.get(3)) != (set.get(1) + set.get(2)));
-//		}
-//		if (set.size() == 5) {
-//			return ((set.get(1) + set.get(4)) != (set.get(2) + set.get(3)))
-//					&& ((set.get(0) + set.get(4)) != (set.get(2) + set.get(3)))
-//					&& ((set.get(0) + set.get(4)) != (set.get(1) + set.get(3)))
-//					&& ((set.get(0) + set.get(4)) != (set.get(1) + set.get(2)))
-//					&& ((set.get(0) + set.get(3)) != (set.get(1) + set.get(2)));
-//		}
-		//if (set.size() == 7) 
-//		System.out.println(set);
-		return size_check(set, new int[] {0,0,0,0}, 4, 0) && size_check(set, new int[] {0,0,0,0,0,0}, 6, 0);
+		if (set.size() == 4) {// a+d != b+c
+			return ((set.get(0) + set.get(3)) != (set.get(1) + set.get(2)));
+		}
+		if (set.size() == 5) {
+			return ((set.get(1) + set.get(4)) != (set.get(2) + set.get(3)))
+					&& ((set.get(0) + set.get(4)) != (set.get(2) + set.get(3)))
+					&& ((set.get(0) + set.get(4)) != (set.get(1) + set.get(3)))
+					&& ((set.get(0) + set.get(4)) != (set.get(1) + set.get(2)))
+					&& ((set.get(0) + set.get(3)) != (set.get(1) + set.get(2)));
+		}
+		if (set.size() == 7) {
+			return size_check(set, new int[] {0,0,0,0}, 4, 0) && size_check(set, new int[] {0,0,0,0,0,0}, 6, 0);
+		}
+		
+		return false;
 	}
-
+	
+	// Create all the strictly increasing set of size total_layer and sum is total_sum
 	public static void rec_subset(int init, int curr_layer, int total_layer, int curr_sum, int total_sum,
 			List<Integer> order_set) {
 		if (curr_layer == total_layer - 1) {
 			sum++;
 			order_set.set(curr_layer, total_sum - curr_sum);
-			// System.out.println(order_set);
 			if (subset_check(order_set)) {
 				System.out.println(order_set);
 			}
