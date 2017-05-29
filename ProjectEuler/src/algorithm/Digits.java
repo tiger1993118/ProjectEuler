@@ -6,6 +6,8 @@ Created on2014-12-31
  */
 package algorithm;
 
+import java.math.BigInteger;
+
 public class Digits {
 
 	public static Integer digitSum(String s) {
@@ -53,6 +55,24 @@ public class Digits {
 			return Long.valueOf(s);
 		else
 			return Long.valueOf(s.substring(s.length() - n, s.length()));
+	}
+	
+	public static BigInteger lastNDigits(BigInteger b, Integer n) {
+		String s = b.toString();
+		if (s.length() <= n) {
+			return b;
+		}else {
+			return new BigInteger(s.substring(s.length() - 9));
+		}
+	}
+	
+	public static BigInteger firstNDigits(BigInteger b, Integer n) {
+		String s = b.toString();
+		if (s.length() <= n) {
+			return b;
+		}else {
+			return new BigInteger(s.substring(0, n));
+		}
 	}
 
 	public static void main(String[] args) {
