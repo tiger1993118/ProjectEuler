@@ -23,13 +23,13 @@ public class Problem108 {
 
 	public static void solve() {
 		/*
-		 * n from the problem Initial value is 1020, since it is the mutiplier of 2,3
+		 * n from the problem Initial value is 1020, since it is the multiplier of 2,3
 		 * and 5 If it exceeds 1000 solutions, it must be the first one with the
-		 * mutiplier of 2, 3 and 5
+		 * Multiplier of 2, 3 and 5
 		 */
 		BigInteger n = BigInteger.valueOf(1020);
 		/*
-		 * Make use of the alogrithm and make some subtle change 1/y = 1/n - 1/x such
+		 * Make use of the algorithm and make some subtle change 1/y = 1/n - 1/x such
 		 * that y = nx/(x-n) We always choose y >= x and we could deduct that x > n and
 		 * x < 2n We re-define the algorithm, set numerator as nx and denominator as
 		 * (x-n), for which 0 < (x-n) <= n
