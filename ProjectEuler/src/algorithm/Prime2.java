@@ -19,7 +19,7 @@ public class Prime2 {
 
 	public Prime2(int n) {
 		primes = new int[n + 1];
-		isPrimes = new boolean[2000000000];
+		isPrimes = new boolean[20000000];
 		primes[1] = 2;
 		isPrimes[2] = true;
 		primes[2] = 3;
