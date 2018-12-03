@@ -84,5 +84,7 @@ public class PrimeBelowN {
 
 	public static void main(String[] args) {
 		PrimeBelowN.setPrimes(1_000_000_000);
+		// System.out.println(PrimeBelowN.getPrimes());
+		System.out.println(PrimeBelowN.getPrimes().size());
 	}
 }
