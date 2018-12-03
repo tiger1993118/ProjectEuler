@@ -5,6 +5,8 @@
  */
 package algorithm;
 
+import java.util.Arrays;
+
 /**
  * @author Xiu Tiger Yi
  *
@@ -30,7 +32,7 @@ public class Prime2 {
 			curr = primes[i] = nextPrime(curr);
 			isPrimes[curr] = true;
 		}
-		System.out.println(primes[n - 1]);
+		// System.out.println(primes[n - 1]);
 	}
 
 	public int nextPrime(int n) {
@@ -72,7 +74,7 @@ public class Prime2 {
 	}
 
 	public int[] getPrimes() {
-		return primes;
+		return Arrays.copyOfRange(primes, 1, primes.length);
 	}
 
 	public boolean[] getIsPrimes() {
