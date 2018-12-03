@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -22,8 +22,8 @@ public class Problem88 {
 	public static void product_sum_numbers() {
 		Integer size = 13000;
 		Integer limit = 12001;
-		Prime.setPrimes(size);
-		boolean[] isPrime = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(size);
+		boolean[] isPrime = PrimeBelowN.getIsPrimes();
 		BigInteger total = BigInteger.ZERO;
 		int[] minimals = new int[size];
 		List<Set<Integer>> nToKs = new ArrayList<Set<Integer>>();

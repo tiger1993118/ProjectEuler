@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import algorithm.Prime2;
+import algorithm.PrimeFirstN;
 
 /**
  * @author Xiu Tiger Yi
@@ -24,7 +24,7 @@ public class Problem60 {
 	public static Map<Integer, List<Integer>> prime_counts;
 
 	public static void primePairSets() {
-		Prime2 primes = new Prime2(5000000);
+		PrimeFirstN primes = new PrimeFirstN(5000000);
 		boolean[] isPrimes = primes.getIsPrimes();
 		System.out.println("okay");
 		prime_counts = new HashMap<Integer, List<Integer>>();

@@ -9,7 +9,7 @@ import java.util.List;
 
 import algorithm.Algorithm1;
 import algorithm.Composite;
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -19,8 +19,8 @@ public class Problem70 {
 
 	public static void totientPermutation() {
 		int limit = 10000000;
-		Prime.setPrimes(limit);
-		boolean[] isPrime = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(limit);
+		boolean[] isPrime = PrimeBelowN.getIsPrimes();
 		Composite.setComposite(limit);
 
 		double totient = (double) 87109 / (double) 79180;

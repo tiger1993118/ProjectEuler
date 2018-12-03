@@ -4,8 +4,8 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
 
-import algorithm.Prime;
-import algorithm.Prime2;
+import algorithm.PrimeBelowN;
+import algorithm.PrimeFirstN;
 
 /*
  * In the following equation x, y, and n are positive integers.
@@ -29,7 +29,7 @@ public class Problem110 {
 		int m = n - 3;
 
 		// Get the first m primes
-		Prime2 p2 = new Prime2(m);
+		PrimeFirstN p2 = new PrimeFirstN(m);
 		int[] primes = p2.getPrimes();
 		System.out.println(Arrays.toString(primes));
 
@@ -130,8 +130,8 @@ public class Problem110 {
 	 */
 	public static void simpleTest() {
 
-		Prime.setPrimes(12);
-		List<Integer> primes = Prime.getPrimes();
+		PrimeBelowN.setPrimes(12);
+		List<Integer> primes = PrimeBelowN.getPrimes();
 
 		// n = a_1 * a_2 * a*3
 		for (int a = 0; a < (primes.size() - 3); a++) {

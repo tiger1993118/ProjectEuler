@@ -8,7 +8,7 @@ package part1.problem091to100;
 import java.util.ArrayList;
 import java.util.List;
 
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -21,8 +21,8 @@ public class Problem95 {
 		int longestLength = 0, longestIndex = 0;
 		int[] chainLength = new int[limit];
 		chainLength[1] = 1;
-		Prime.setPrimes(limit);
-		boolean[] isPrime = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(limit);
+		boolean[] isPrime = PrimeBelowN.getIsPrimes();
 		for (int i = 2; i < limit; i++) {
 			if (chainLength[i] == 0) {
 				if (isPrime[i]) {

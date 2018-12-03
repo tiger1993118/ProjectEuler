@@ -7,7 +7,7 @@ package part1.problem061to070;
 
 import java.util.List;
 
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -21,9 +21,9 @@ public class Problem69 {
 
 	public static void totientMax() {
 		int limit = 1000000;
-		Prime.setPrimes(limit);
-		primes = Prime.getPrimes();
-		isPrime = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(limit);
+		primes = PrimeBelowN.getPrimes();
+		isPrime = PrimeBelowN.getIsPrimes();
 		Integer product = 1;
 		for (Integer prime : primes) {
 			if (product * prime < limit) {

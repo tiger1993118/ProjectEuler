@@ -5,7 +5,7 @@
  */
 package part1.problem051to060;
 
-import algorithm.Prime2;
+import algorithm.PrimeFirstN;
 
 /**
  * 
@@ -45,7 +45,7 @@ public class Problem58 {
 
 	public void spiralPrimes() {
 
-		Prime2 Prime2 = new Prime2(30000);
+		PrimeFirstN Prime2 = new PrimeFirstN(30000);
 		Integer prime = 3;
 		Integer total = 5;
 		Integer length = 3;

@@ -8,7 +8,7 @@ package part1.problem071to080;
 import java.util.List;
 
 import algorithm.Composite;
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -18,9 +18,9 @@ public class Problem71 {
 
 	public static void orderedFractions() {
 		Integer limit = 1000001;
-		Prime.setPrimes(limit);
+		PrimeBelowN.setPrimes(limit);
 		Composite.setComposite(limit);
-		boolean[] isPrime = Prime.getIsPrimes();
+		boolean[] isPrime = PrimeBelowN.getIsPrimes();
 		double ratio = 10.0;
 		Integer numer = 0, denom = 0;
 		for (Integer n = 3; n <= limit - 1; n++) {

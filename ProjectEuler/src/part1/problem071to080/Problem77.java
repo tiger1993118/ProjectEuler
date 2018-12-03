@@ -7,7 +7,7 @@ package part1.problem071to080;
 
 import java.util.List;
 
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -23,9 +23,9 @@ public class Problem77 {
 
 	public static void primeSummations() {
 		Integer limit = 100;
-		Prime.setPrimes(limit);
-		primes = Prime.getPrimes();
-		isPrime = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(limit);
+		primes = PrimeBelowN.getPrimes();
+		isPrime = PrimeBelowN.getIsPrimes();
 		numSummations = new int[limit];
 		numSummations[1] = 0;
 		numSummations[2] = 0;

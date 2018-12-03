@@ -8,7 +8,7 @@ package part1.problem081to090;
 import java.util.ArrayList;
 import java.util.List;
 
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -18,8 +18,8 @@ public class Problem87 {
 
 	public static void primePowerTriples() {
 		int limit = 5000_0000;
-		Prime.setPrimes(limit);
-		List<Integer> primes = Prime.getPrimes();
+		PrimeBelowN.setPrimes(limit);
+		List<Integer> primes = PrimeBelowN.getPrimes();
 		List<Integer> squares = new ArrayList<Integer>();
 		List<Integer> cubes = new ArrayList<Integer>();
 		List<Integer> fourths = new ArrayList<Integer>();

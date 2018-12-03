@@ -21,9 +21,9 @@ public class Composite {
 	static boolean[] isPrimes;
 
 	public static void setComposite(Integer n) {
-		Prime.setPrimes(n);
-		primes = Prime.getPrimes();
-		isPrimes = Prime.getIsPrimes();
+		PrimeBelowN.setPrimes(n);
+		primes = PrimeBelowN.getPrimes();
+		isPrimes = PrimeBelowN.getIsPrimes();
 	}
 
 	public static Map<Integer, Integer> getCF(Integer n) {

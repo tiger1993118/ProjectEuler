@@ -9,7 +9,7 @@ import java.math.BigInteger;
 import java.util.List;
 
 import algorithm.Composite;
-import algorithm.Prime;
+import algorithm.PrimeBelowN;
 
 /**
  * @author Xiu Tiger Yi
@@ -19,9 +19,9 @@ public class Problem72 {
 
 	public static void countingFractions() {
 		Integer limit = 1000001;
-		Prime.setPrimes(limit);
+		PrimeBelowN.setPrimes(limit);
 		Composite.setComposite(limit);
-		boolean[] isPrime = Prime.getIsPrimes();
+		boolean[] isPrime = PrimeBelowN.getIsPrimes();
 		BigInteger total = new BigInteger("0");
 		for (Integer n = 2; n < limit; n++) {
 			if (isPrime[n]) {

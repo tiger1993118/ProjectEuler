@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author Xiu Tiger Yi
  *
  */
-public class Prime2 {
+public class PrimeFirstN {
 
 	int n;
 
@@ -19,7 +19,7 @@ public class Prime2 {
 
 	boolean[] isPrimes;
 
-	public Prime2(int n) {
+	public PrimeFirstN(int n) {
 		primes = new int[n + 1];
 		isPrimes = new boolean[20000000];
 		primes[1] = 2;
@@ -79,5 +79,10 @@ public class Prime2 {
 
 	public boolean[] getIsPrimes() {
 		return isPrimes;
+	}
+
+	public static void main(String[] args) {
+		PrimeFirstN p = new PrimeFirstN(1_000_000_000);
+
 	}
 }
