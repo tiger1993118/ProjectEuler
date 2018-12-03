@@ -1,40 +1,41 @@
-/**Prime2.java
- * {todo}
- @author Xiu Yi Tiger yixiu17@gmail.com
- Created on Jan 4, 2015 at 4:13:11 PM
- */
 package algorithm;
 
 import java.util.Arrays;
 
 /**
- * @author Xiu Tiger Yi
- *
+ * @author Xiu Tiger Yi A class that find the first n primes.
  */
 public class PrimeFirstN {
 
 	int n;
-
-	int[] primes;
-
-	boolean[] isPrimes;
+	int[] primes;// Store all the primes
+	boolean[] isPrimes;// A boolean match index to isPrime
 
 	public PrimeFirstN(int n) {
-		primes = new int[n + 1];
-		isPrimes = new boolean[20000000];
-		primes[1] = 2;
-		isPrimes[2] = true;
-		primes[2] = 3;
-		isPrimes[3] = true;
 
+		// Initialize data structure
+		primes = new int[n + 1];
+
+		// Set the first two primes
+		primes[1] = 2;
+		primes[2] = 3;
+
+		// Starting from the prime 3
 		int curr = 3;
-		for (int i = 3; i < n + 1; i++) {
+		// Set primes
+		for (int i = 3; i < primes.length; i++) {
 			curr = primes[i] = nextPrime(curr);
-			isPrimes[curr] = true;
 		}
-		// System.out.println(primes[n - 1]);
+
+		isPrimes = new boolean[primes[primes.length - 1] + 1];
+		// Set isPrimes
+		for (int i = 1; i < primes.length; i++) {
+			isPrimes[primes[i]] = true;
+		}
+
 	}
 
+	// Skip every even number and return the next prime
 	public int nextPrime(int n) {
 		do {
 			n += 2;
@@ -43,6 +44,7 @@ public class PrimeFirstN {
 
 	}
 
+	// Return True if current number n is Prime
 	public boolean isPrime(int n) {
 		int root = (int) Math.sqrt(n + 1);
 
@@ -74,6 +76,7 @@ public class PrimeFirstN {
 	}
 
 	public int[] getPrimes() {
+		// inogre primes[0], which is 0
 		return Arrays.copyOfRange(primes, 1, primes.length);
 	}
 
@@ -82,7 +85,8 @@ public class PrimeFirstN {
 	}
 
 	public static void main(String[] args) {
-		PrimeFirstN p = new PrimeFirstN(1_000_000_000);
-
+		PrimeFirstN p = new PrimeFirstN(10);
+		System.out.println(Arrays.toString(p.getIsPrimes()));
+		System.out.println(p);
 	}
 }
