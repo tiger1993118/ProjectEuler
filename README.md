@@ -11,7 +11,7 @@ I am currently @ Problem 111
 
 |   Problem # Range |  Start Date  |  Solved Date |
 | ------------- | ------------- | ------------- |
-|   [Problem 01-10](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/Problem01to10)  | 2014-11-27 | 2014-12-03 | 
+|   [Problem 01-10](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part1/Problem01to10)  | 2014-11-27 | 2014-12-03 | 
 |   [Problem 11-20](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/Problem11to20)  | 2014-11-28 | 2014-11-30 | 
 |   [Problem 21-30](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/Problem21to30)  | 2014-12-03 | 2014-12-08 | 
 |   [Problem 31-40](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/Problem31to40)  | 2014-12-12 | 2014-12-12 |
