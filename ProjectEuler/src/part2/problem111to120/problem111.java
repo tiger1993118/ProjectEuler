@@ -8,6 +8,16 @@ import algorithm.PrimeBelowN;
 /**
  * Problem 111 https://projecteuler.net/problem=111
  *
+ * 1. Since we are only looking for primes that filled the requirements within a
+ * range, which is a very small amount with specific property. Then we only have
+ * to compute the primes below the square root of 'range', since they are the
+ * only possible divisors of a large prime 'range'. ---------------------------
+ * 2. Write function(ie. findPrime(primes, digit)) that will find the list of
+ * prime number that has the most occurrences of digit 'digit'.----------------
+ * 3. Since we are not sure what will the number of the most occurrences be, We
+ * are iterating number of flexible digits from 1 to all. Then we picking the
+ * positions and assign digits to them using recursion. If we found one, then
+ * this will be the max number of flexible digits.--------------------
  */
 public class Problem111 {
 
@@ -50,6 +60,7 @@ public class Problem111 {
 		// The flexibility of position in the number starting at 1
 		for (int flex = 1; ret.isEmpty() && flex < digits; flex++) {
 			ret = recurHelper(primes, digit, init, flex, 0);
+			System.out.println(flex);
 		}
 
 		return ret;
