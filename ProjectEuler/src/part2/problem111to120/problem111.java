@@ -35,6 +35,7 @@ public class Problem111 {
 		List<Integer> primes = PrimeBelowN.getPrimes();
 		long sum = 0;
 
+		// Iterating all the digits 'd' to find N(d, digits)
 		for (int d = 0; d < 10; d++) {
 			List<Long> ret = findPrime(primes, d);
 			System.out.println(d + "-" + ret.size());
@@ -45,6 +46,10 @@ public class Problem111 {
 		System.out.println(sum);
 	}
 
+	/*
+	 * Find the M(digit, digits) and the list of all the primes that having
+	 * M(digits, digits) repeated 'digit'
+	 */
 	private static List<Long> findPrime(List<Integer> primes, int digit) {
 
 		// Initially every positions are all digit 'd', with length 'digit'
