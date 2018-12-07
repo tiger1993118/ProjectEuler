@@ -11,42 +11,97 @@ import algorithm.PrimeBelowN;
  */
 public class Problem111 {
 
-	// The problem asking to find the appropriate primes between 1e9 and 1e10
-	public static final double range = 1e10;
 	// Number of digits available
 	public static final int digits = 10;
+	// The problem asking to find the appropriate primes between 1e9 and 1e10
+	public static final double range = Math.pow(10, digits);
 
-	/*
-	 * 1. Need to time the algorithm3. Write function that take number of flexible
-	 * position 4. recursive calculate the output
-	 */
 	public static void solve() {
+		// Only have to find all the primes smaller than sqaure root of range
 		int n = (int) Math.sqrt(range);
 
 		// All primes below n
 		PrimeBelowN.setPrimes(n);
 		List<Integer> primes = PrimeBelowN.getPrimes();
+		long sum = 0;
 
 		for (int d = 0; d < 10; d++) {
-			// The flexibility of position in the number starting at 1
-			int flexibility = 0;
-			List<Long> ret;
-			do {
-				flexibility++;
-				ret = findPrime(primes, flexibility, d);
-			} while (ret.isEmpty() && flexibility < digits);
+			List<Long> ret = findPrime(primes, d);
 			System.out.println(d + "-" + ret.size());
+			for (long p : ret)
+				sum += p;
 		}
+
+		System.out.println(sum);
 	}
 
-	private static List<Long> findPrime(List<Integer> primes, int flexibility, int d) {
+	private static List<Long> findPrime(List<Integer> primes, int digit) {
+
+		// Initially every positions are all digit 'd', with length 'digit'
+		int[] init = new int[digits];
+		for (int i = 0; i < init.length; i++) {
+			init[i] = digit;
+		}
+
+		// The list of required primes
 		List<Long> ret = new ArrayList<Long>();
+
+		// Since we need to find the prime with most positions are repeated
+		// The flexibility of position in the number starting at 1
+		for (int flex = 1; ret.isEmpty() && flex < digits; flex++) {
+			ret = recurHelper(primes, digit, init, flex, 0);
+		}
 
 		return ret;
 	}
 
-	private static List<Long> recurHelper(List<Integer> primes, int flexibility, int d, int[] number) {
-		return null;
+	private static List<Long> recurHelper(List<Integer> primes, int digit, int[] number, int flexibility, int level) {
+
+		List<Long> ret = new ArrayList<Long>();
+
+		// If there is no flexibility, we will check the current number whether it is
+		// prime
+		if (flexibility == 0) {
+
+			// Build the number
+			long current = buildNumber(number);
+
+			// Check if the number is the multiplier of any primes
+			for (int prime : primes) {
+				if (current % prime == 0) {// Composite
+					return ret;
+				}
+			}
+			ret.add(current);
+
+		} else {
+			// Current digit is set, so deduct 1 from flexibility
+			flexibility -= 1;
+
+			// Looping through all the available positions in the number
+			for (int l = level; l < digits - flexibility; l++) {
+
+				// If the position of the digit is at 0, it cannot be 0
+				int n = (l == 0) ? 1 : 0;
+				// Loop through all the possible digits at current position
+				for (; n < 10; n++) {
+
+					// The digit cannot be the same as the repeated digit
+					if (n != digit) {
+						number[l] = n;
+						ret.addAll(recurHelper(primes, digit, number, flexibility, l + 1));
+					}
+				}
+				// Reset the digit back to the repeated digit
+				number[l] = digit;
+
+				// 0 cannot be at 0th position
+				if (digit == 0 && l == 0) {
+					return ret;
+				}
+			}
+		}
+		return ret;
 	}
 
 	/*
@@ -63,8 +118,7 @@ public class Problem111 {
 	}
 
 	public static void main(String[] args) {
-		// problem111.solve();
-		System.out.println(Problem111.buildNumber(number));
+		Problem111.solve();
 
 	}
 }
