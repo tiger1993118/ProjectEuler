@@ -19,13 +19,10 @@ public class Problem113 {
 
 	/*
 	 * Main idea, instead of iterating all the number below 'range'(ie. 10^100) like
-	 * Problem 112, we will directly compute the number of non-bouncy number below
-	 * 'range'. Since the number could have 100 digits in it and it is too big for
-	 * any primitive type(ie. int), we will use an int[] to represent the number,
-	 * and every int in the array representing 1 digit.
+	 * Problem 112, we will directly compute the number of non-bouncy below 'range'.
 	 * 
-	 * 1. Initialize the integer array of length
-	 * 'LENGTH'------------------------------
+	 * 
+	 * 1. Initialize the data structure to store sums
 	 * 
 	 * 2. Iteratively looping through all the positions in the number-----------
 	 * 
@@ -33,12 +30,12 @@ public class Problem113 {
 	 * 
 	 * Notes: 1. The number could have 0s in front, it will just represent a
 	 * less-digits number(ie. 009 will just be 9) --------------------------------
-	 * 2. The total number of non-bouncy = increasing + decreasing - same digits---
+	 * 2. The total number of non-bouncy = increasing + decreasing - same digits - 1
 	 * 3. The number of increasing is the same as the number of decreasing, since we
-	 * could always reverse an increasing number and it becomes an decreasing
-	 * number, vice versa. Except for the number of 00987, since this represent 987
-	 * and it is valid in decreasing number but invalid in increasing number, so we
-	 * have to compute this group separately for decreasing number
+	 * could always flip an increasing number and it becomes an decreasing number,
+	 * vice versa. Except for the number of 00987, since this represent 987 and it
+	 * is valid in decreasing number but invalid in increasing number, so we have to
+	 * compute this group separately for decreasing number
 	 */
 	public static void solve() {
 
@@ -51,15 +48,20 @@ public class Problem113 {
 		System.out.println(Arrays.toString(NumberOfIncreasing));
 
 		long increasings = getIncreasing(LENGTH - 1);
+
+		// As we were mentioned, we could reverse every increasings, and they will
+		// become decreasing. Except for the case 00987, we could not flip 78900 since
+		// it is invalid in increasings. So we have to go to shorter increasing 789
+		// and flip it will become 987
 		long decreasings = 0;
-		for (int n = LENGTH - 1; n > 0; n--) {
+		for (int n = LENGTH - 1; n > 0; n--) {// All lengths
 			decreasings += getIncreasing(n);
 		}
 		long sames = 0;
-		for (int n = LENGTH - 1; n > 0; n--) {
+		for (int n = LENGTH - 1; n > 0; n--) {// ie. 0000 - 9999
 			sames += 10;
 		}
-		sames++;
+		sames++;// excluding 0
 		long total = increasings + decreasings - sames;
 		System.out.println(total);
 	}
