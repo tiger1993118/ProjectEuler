@@ -29,30 +29,20 @@ public class Problem112 {
 	 */
 	public static void solve() {
 
-		// Starting with 22200 total number, and compute the non-bouncy number
-		long total = 22200L;
-		int non_bouncy = 2179;
-		double percent = (double) non_bouncy / total;
+		int bouncy = 0;
+		double percent = 0;
+		int n = 0;
 
-		int not_bouncy;
-		long prefix;
-		while (percent != 0.01) {
-			// New Total number
-			total += 100;
+		while (percent != 99) {
 
-			// The prefix of the total(ie. x in x00)
-			prefix = total / 100;
-			not_bouncy = checkBouncy(prefix);
-
-			if (not_bouncy == 1) {// Increasing Type
-
-			} else if (not_bouncy == -1) {// Decreasing Type
-
+			n++;
+			if (checkBouncy(n) == -10) {
+				bouncy++;
 			}
-			// If the number is
-			// Update parameters
-			percent = (double) non_bouncy / total;
+
+			percent = (double) bouncy * 100 / n;
 		}
+		System.out.println(bouncy + " - " + n + " - " + percent);
 	}
 
 	/*
@@ -86,6 +76,7 @@ public class Problem112 {
 				// The number is bouncy
 				return -10;
 			}
+			prev = curr;
 		}
 
 		// The number have all the same digits
@@ -95,8 +86,7 @@ public class Problem112 {
 
 	public static void main(String[] args) {
 
-		// Problem112.solve();
-
+		Problem112.solve();
 	}
 
 }
