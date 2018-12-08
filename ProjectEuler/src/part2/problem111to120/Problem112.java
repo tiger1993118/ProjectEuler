@@ -7,25 +7,14 @@ package part2.problem111to120;
 public class Problem112 {
 
 	/*
-	 * Main Idea: Since we are finding the bouncy numbers that are exactly 99%, then
-	 * the total number we are looking at must be a multiplier of 100, so that we
-	 * iterate over 100 every total number. We started with 22200 in our case, and
-	 * add up the bouncy number since.
 	 * 
-	 * 1. Starting with 22200 and calculate the bouncy number below 22200 --------
-	 * 
-	 * 2. In every 100 number, add up any new bouncy number to the sum -----------
-	 * 
-	 * 3. When we calculate the bouncy number within these 100 numbers, we divide it
-	 * into two cases -------------------------------------------------------------
-	 * 
-	 * 3a. If the prefix number(ie. x in x00) is a bouncy number already, then all
-	 * 100 numbers will be bouncy as well ----------------------------------------
-	 * 
-	 * 3b. otherwise, then we calculate bouncy number, for which we only need to
-	 * look at the only digit prior to 00 (ie. y in xy00, and y is only a digit).
-	 * Depending on increasing or decreasing scenario, we will compute the
-	 * non-bouncy number.
+	 * The main function we have to write is checkBouncy, which check whether the
+	 * current number is bouncy. We starting from the left hand of the number and
+	 * iterate till the rightmost digit. We have to be careful is that, assuming the
+	 * number is not bouncy number at first, then we don't know if it will be
+	 * increasing, decreasing or neither(ie. like 2222). So we started to figure it
+	 * out until we see movement from digits(ie. increasing, decreasing) and then
+	 * starting from here, we could decide if it is a bouncy number.
 	 */
 	public static void solve() {
 
@@ -33,13 +22,15 @@ public class Problem112 {
 		double percent = 0;
 		int n = 0;
 
+		// Find the percentage of bouncy number is exactly 99%
 		while (percent != 99) {
 
 			n++;
+
 			if (checkBouncy(n) == -10) {
 				bouncy++;
 			}
-
+			
 			percent = (double) bouncy * 100 / n;
 		}
 		System.out.println(bouncy + " - " + n + " - " + percent);
