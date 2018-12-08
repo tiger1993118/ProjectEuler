@@ -1,12 +1,21 @@
 package part2.problem111to120;
 
+import java.util.Arrays;
+
 /**
  * Problem 113 Link: https://projecteuler.net/problem=113
  *
  */
 public class Problem113 {
 
-	public static final int LENGTH = 50;
+	// Length of the range, such that range = 10^LENGTH
+	public static final int LENGTH = 101;
+
+	// Number of DIGITS (ie. 0, 1...9)
+	public static final int DIGITS = 10;
+
+	// increasingNumber[i] represents the number of increasings below 10^(i+1)
+	private static long[] NumberOfIncreasing;
 
 	/*
 	 * Main idea, instead of iterating all the number below 'range'(ie. 10^100) like
@@ -18,40 +27,74 @@ public class Problem113 {
 	 * 1. Initialize the integer array of length
 	 * 'LENGTH'------------------------------
 	 * 
-	 * 2. Recursively looping through all the positions in the number---------------
+	 * 2. Iteratively looping through all the positions in the number-----------
 	 * 
 	 * 3. Iteratively looping through all available digits in this position 0 - 9
 	 * 
 	 * Notes: 1. The number could have 0s in front, it will just represent a
 	 * less-digits number(ie. 009 will just be 9) --------------------------------
-	 * 2. The total number of non-bouncy = increasing + decreasing - same digits
+	 * 2. The total number of non-bouncy = increasing + decreasing - same digits---
+	 * 3. The number of increasing is the same as the number of decreasing, since we
+	 * could always reverse an increasing number and it becomes an decreasing
+	 * number, vice versa. Except for the number of 00987, since this represent 987
+	 * and it is valid in decreasing number but invalid in increasing number, so we
+	 * have to compute this group separately for decreasing number
 	 */
 	public static void solve() {
 
-		int[] number = new int[LENGTH];
+		// Initialize the data structure to store number of increase numbers
+		NumberOfIncreasing = new long[LENGTH];
+		NumberOfIncreasing[0] = 1;
 
-		int increasings = recurIncreasing(number, 0, 0);
-		System.out.println(increasings);
-		// int decreasings = recurDecreasing(number, 0, 9);
-		// int same_digits
+		computeIncreasing();
+
+		System.out.println(Arrays.toString(NumberOfIncreasing));
+
+		long increasings = getIncreasing(LENGTH - 1);
+		long decreasings = 0;
+		for (int n = LENGTH - 1; n > 0; n--) {
+			decreasings += getIncreasing(n);
+		}
+		long sames = 0;
+		for (int n = LENGTH - 1; n > 0; n--) {
+			sames += 10;
+		}
+		sames++;
+		long total = increasings + decreasings - sames;
+		System.out.println(total);
 	}
 
-	public static int recurIncreasing(int[] number, int position, int min) {
+	private static long getIncreasing(int celling) {
+		return NumberOfIncreasing[celling];
+	}
 
-		int total = 0;
+	private static void computeIncreasing() {
 
-		if (position == LENGTH) {// We have a complete increasing number
-			return 1;
-		} else {// We keep constructing the number and set digit at current position
+		// Store all the current sum
+		long[] temp_sums = new long[DIGITS];
 
-			// Iterating all the digits from 'min' to 9, and set it at current position
-			for (int n = min; n < 10; n++) {
-				number[position] = n;
-				total += recurIncreasing(number, position + 1, n);
+		for (int i = 1; i < LENGTH; i++) {
+
+			// current sum and entry
+			long curr_sum = NumberOfIncreasing[i - 1];
+
+			// The first entry is the last sum
+			long prev = temp_sums[0];
+			temp_sums[0] = curr_sum;
+
+			for (int i_sum = 1; i_sum < DIGITS; i_sum++) {
+				// Update the current sum
+				curr_sum -= prev;
+
+				// Update the previous sum
+				prev = temp_sums[i_sum];
+
+				// insert the new sum
+				temp_sums[i_sum] = curr_sum;
 			}
+			// Sum the array and it will be the number of increasings below 10^(i+1)
+			NumberOfIncreasing[i] = Arrays.stream(temp_sums).sum();
 		}
-
-		return total;
 	}
 
 	public static void main(String[] args) {
