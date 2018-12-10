@@ -17,9 +17,10 @@ public class Problem115 {
 	 * our solution bottom-up. Two differences I will make here is: Firstly, we will
 	 * use a list to keep track of the number of ways to solve blocks of length n,
 	 * since the question asking for the length and it is undecidable, we cannot
-	 * initial it with array as Problem 114. Secondly, when break up the problem and
-	 * block of length n, will make the least length of units a parameter, instead
-	 * of a static number like 3 in Problem 114.
+	 * initialize it with array as Problem 114. Secondly, when breaking up the
+	 * problem and blocks of length n, I will make the least length of units a
+	 * parameter, instead of a static number like 3 in Problem 114, make the subtle
+	 * changes in the recursive algorithm correspondingly.
 	 * 
 	 * 1. Use Problem 114 algorithm and verify the value F(3, 29) and F(3, 30) to
 	 * make sure our algorithm is correct. ----------------------------------------
