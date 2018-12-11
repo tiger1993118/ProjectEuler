@@ -9,4 +9,4 @@ This is a package include classes that solved problems from 111 to 120
 | Problem113 | [Non-bouncy numbers](https://projecteuler.net/problem=113) | 2018-12-07 19:46 | 2018-12-08 00:51 | 5H |
 | Problem114 | [Counting block combinations I](https://projecteuler.net/problem=114) | 2018-12-09 22:33 | 2018-12-09 23:06 | 33M |
 | Problem115 | [Counting block combinations II](https://projecteuler.net/problem=115) | 2018-12-10 17:44 | 2018-12-10 18:10 | 26M |
-| Problem116 | [Red, green or blue tiles](https://projecteuler.net/problem=116) | 2018-12-10 18:32 |  |  |
+| Problem116 | [Red, green or blue tiles](https://projecteuler.net/problem=116) | 2018-12-10 18:32 | 2018-12-10 19:23 | 51M |
