@@ -10,11 +10,12 @@ public class Problem117 {
 
 	/*
 	 * Main Idea: Similar to Problem 116, I will solve the problem with Dynamic
-	 * Programming, and work my solution bottom-up. To break-up the problem, we will
-	 * look at the 1st block and we have a decision to make, we could either choose
-	 * no tile(i.e. black) or tile. -----------------------------------------------
+	 * Programming, and work my solution bottom-up. To break up the problem, we will
+	 * look at the 1st block and we have a decision to make, since we could either
+	 * choose no tile(i.e. black) or tile.-----------------------------------------
+	 * 
 	 * -- If the first one is no tile, Solve(n) will become Solve(n-1) -------------
-	 * -- If the first one have a tile, it will go either red, green or blue. ------
+	 * -- If the first one has a tile, it will go either red, green or blue. ------
 	 * --- For different color tiles, we would skip different number of tiles
 	 * depending on the length of the tile -----------------------------------------
 	 * Lastly, we will add all the smaller solutions
