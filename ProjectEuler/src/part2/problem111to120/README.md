@@ -13,4 +13,4 @@ This is a package include classes that solved problems from 111 to 120
 | Problem117 | [Red, green, and blue tiles](https://projecteuler.net/problem=117) | 2018-12-11 18:56 | 2018-12-11 19:14 | 18M |
 | Problem118 | [Pandigital prime sets](https://projecteuler.net/problem=118) | 2018-12-11 19:18 | 2018-12-12 21:37 | 26H |
 | Problem119 | [Digit power sum](https://projecteuler.net/problem=119) | 2018-12-13 01:26 | 2018-12-13 02:02 | 36M |
-| Problem120 | [Square remainders](https://projecteuler.net/problem=120) | 2018-12-13 15:39 |  |  |
+| Problem120 | [Square remainders](https://projecteuler.net/problem=120) | 2018-12-13 15:39 | 2018-12-13 16:12 | 33M |
