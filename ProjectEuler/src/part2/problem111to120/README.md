@@ -11,4 +11,4 @@ This is a package include classes that solved problems from 111 to 120
 | Problem115 | [Counting block combinations II](https://projecteuler.net/problem=115) | 2018-12-10 17:44 | 2018-12-10 18:10 | 26M |
 | Problem116 | [Red, green or blue tiles](https://projecteuler.net/problem=116) | 2018-12-10 18:32 | 2018-12-10 19:23 | 51M |
 | Problem117 | [Red, green, and blue tiles](https://projecteuler.net/problem=117) | 2018-12-11 18:56 | 2018-12-11 19:14 | 18M |
-| Problem118 | [Pandigital prime sets](https://projecteuler.net/problem=118) | 2018-12-11 19:18 |  |  |
+| Problem118 | [Pandigital prime sets](https://projecteuler.net/problem=118) | 2018-12-11 19:18 | 2018-12-12 21:37 | 26H |
