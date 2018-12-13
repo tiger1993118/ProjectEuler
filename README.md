@@ -1,10 +1,9 @@
 ProjectEuler
 ============
 
-This Git repository created by me, and it is my solutions to the problems posted on ProjectEuler(https://projecteuler.net/) so far
-I solve these problems whenever I am free, and I love them!
-All of the solutions are written in Java at the moment, I also give simple explanations for my solutions before the header of every classes
-
+This Github repository is my solutions to the ongoing challenges posted on ProjectEuler(https://projecteuler.net/).
+I would solve these problems whenever I am free, and I love them!
+All of the solutions are written in Java by me, I also give simple explanations for my solutions within each class
 
 I am currently @ Problem 120
 
@@ -21,8 +20,8 @@ I am currently @ Problem 120
 |  [Problem 71-80](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part1/problem071to080)  | 2015-05-05 | 2015-07-15 |
 |  [Problem 81-90](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part1/problem081to090)  | 2015-05-16 | 2015-05-28 |
 |  [Problem 91-100](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part1/problem091to100) | 2015-05-06 | 2015-05-28 |
-| [Problem 101-110](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem101to110)  | 2017-05-16 | 2018-12-03 |
-| [Problem 111-120](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem111to120)  | 2017-05-17 |  |
+| [Problem 101-110](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem101to110) | 2017-05-16 | 2018-12-03 |
+| [Problem 111-120](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem111to120) | 2017-05-17 | 2018-12-13 |
 
 
 
