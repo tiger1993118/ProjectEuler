@@ -21,35 +21,41 @@ public class Problem118 {
 	 * Main Idea: Focusing on how to group the digits(i.e. 1 to 9) first, and come
 	 * up with different group setting. After, compute all the combinations of the
 	 * digits and group them with different group settings. Test each appointed
-	 * number in every group settings to check if they are all primes. Notes: be
-	 * careful when adding up the solutions, since there might be duplicate(i.e.
-	 * 12|34|56 is the same as 34|12|56 in group of numbers.
+	 * number in every group settings to check if they are all primes.
+	 * 
+	 * Notes: be careful when adding up the solutions, since there might be
+	 * duplicate(i.e. 12|34|56 is the same as 34|12|56 in group of numbers.
+	 * 
+	 * Notes: There is no need to try 9-digits numbers, since all of them are
+	 * obviously composite number.(i.e. they all could be divided by 3)
 	 * 
 	 * 1. Computing Different set of groupings. for example, (3,3,2,1) stands for a
-	 * set of numbers consisted of 3-digits, 3-digits, 2-digits and single-digit
-	 * number.
+	 * set of numbers consisted of two 3-digits numbers, a 2-digits number and a
+	 * single-digit number.
 	 * 
 	 * 2. Applying the group setting to every combination of digits(i.e. 1 to 9).
 	 * For example, applying (3,3,2,1) to 321547689 is 321,547,68,9
 	 * 
-	 * 3. Divided the duplicate number of settings. For example for group
+	 * 3. Divided the duplicate number of settings. For example for group setting
 	 * (3,2,2,1,1), we will divide the number of solutions of this group settings by
-	 * 2*2;
+	 * 2*2(i.e. this group repeated 2*2 times);
 	 */
 	// Number of available digits
 	private static int NUMBER_OF_DIGIT = 9;
 
-	// Limit of Prime
-	private static int LIMIT = (int) Math.pow(10, 8);
+	// Limit of Prime, 8-digits number or less
+	private static int LIMIT = (int) Math.pow(10, NUMBER_OF_DIGIT - 1);
 
+	// Use boolean array to determine if the number is prime(O(1))
 	private static boolean[] isPrime;
 
 	public static void solve() {
 
+		// Find all primes below LIMIT
 		PrimeBelowN.setPrimes(LIMIT);
-
 		isPrime = PrimeBelowN.getIsPrimes();
 
+		// Computer
 		System.out.println(recurAllGroup(NUMBER_OF_DIGIT - 1, new ArrayList<Integer>(), NUMBER_OF_DIGIT));
 	}
 
@@ -156,14 +162,6 @@ public class Problem118 {
 		// System.out.println();
 		return 1;
 	}
-
-	/*
-	 * public static boolean isDistinctDigit(int n) { boolean[] digits = new
-	 * boolean[10]; digits[0] = true; while (n != 0) { int digit = n % 10;
-	 * 
-	 * if (digits[digit]) return false; else digits[digit] = true; n /= 10; } return
-	 * true; }
-	 */
 
 	public static void main(String[] args) {
 		Problem118.solve();
