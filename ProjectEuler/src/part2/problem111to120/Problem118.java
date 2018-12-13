@@ -1,8 +1,10 @@
 package part2.problem111to120;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Queue;
 
 import algorithm.PrimeBelowN;
@@ -59,8 +61,8 @@ public class Problem118 {
 		if (digits.size() == 0) {// Base case
 			// System.out.println(current);
 			// Apply the group setting to this number, and check whether they are all primes
-			groupAndPrime(current, groups);
-			return 1;
+			return groupAndPrime(current, groups);
+
 		} else {// Recursive case
 
 			int total = 0;
@@ -89,13 +91,32 @@ public class Problem118 {
 	public static int recurAllGroup(int prev, List<Integer> groups, int left) {
 
 		if (left == 0) {// Base case
-			// The current group
-			System.out.println(groups);
+
+			// Compute the number of duplication of this group setting
+			int duplicate = 1;
+			Map<Integer, Integer> map = new HashMap<>();
+			for (int t : groups) {
+				if (map.containsKey(t))
+					map.put(t, map.get(t) + 1);
+				else
+					map.put(t, 1);
+			}
+			for (int t : map.values()) {
+				for (int f = 2; f <= t; f++)
+					duplicate *= f;
+			}
+
+			// Initialize the digits Queue(1 to 9)
 			Queue<Integer> digits = new LinkedList<Integer>();
 			for (int n = 1; n <= NUMBER_OF_DIGIT; n++) {
 				digits.add(n);
 			}
-			return recurAllNumber("", digits, groups);
+
+			int total = recurAllNumber("", digits, groups);
+
+			// The current group
+			System.out.println(groups + " - " + total + " - " + duplicate);
+			return (total / duplicate);
 		} else {// Recursive case, generate the number number of digits
 
 			int total = 0;
@@ -146,6 +167,5 @@ public class Problem118 {
 
 	public static void main(String[] args) {
 		Problem118.solve();
-
 	}
 }
