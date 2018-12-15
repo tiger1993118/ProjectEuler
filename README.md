@@ -5,7 +5,7 @@ This Github repository is my solutions to the ongoing challenges posted on Proje
 I would solve these problems whenever I am free, and I love them!
 All of the solutions are written in Java by me, I also give simple explanations for my solutions within each class
 
-I am currently @ Problem 120
+I am currently @ Problem 121
 
 
 |   Problem # Range |  Start Date  |  Solved Date |
@@ -22,7 +22,5 @@ I am currently @ Problem 120
 |  [Problem 91-100](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part1/problem091to100) | 2015-05-06 | 2015-05-28 |
 | [Problem 101-110](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem101to110) | 2017-05-16 | 2018-12-03 |
 | [Problem 111-120](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem111to120) | 2017-05-17 | 2018-12-13 |
-
-
-
+| [Problem 121-130](https://github.com/tiger1993118/ProjectEuler/tree/master/ProjectEuler/src/part2/problem121to130) | 2018-12-15 |  |
 
