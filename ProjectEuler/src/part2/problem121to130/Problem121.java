@@ -20,7 +20,6 @@ public class Problem121 {
 	 * 2. Apply the indices of permutations to the percentage of winning
 	 * 3. Add the percentages up 
 	 * 4. Compute the final winning prize
-	 *
 	 */
 	public static void solve() {
 
@@ -29,8 +28,10 @@ public class Problem121 {
 			PERCENTAGES[i] = new BigFraction(i + 1, i + 2);
 		}
 
+		// Initially, no Blue disk is selected
 		boolean[] initial_selected = new boolean[TURNS];
 
+		// Total Probability
 		BigFraction total = BigFraction.ZERO;
 
 		for (int n = TURNS / 2 + 1; n <= TURNS; n++) {
@@ -43,7 +44,7 @@ public class Problem121 {
 
 		if (availablity == 0) {// Base case, found a permutation
 
-			// Apply current permutation to the percentages
+			// Apply current permutation to the probability
 			BigFraction f = computeProbabliity(selected);
 
 			return f;
@@ -71,7 +72,7 @@ public class Problem121 {
 	}
 
 	/*
-	 * Compute and return the total probability of selected current permutations of
+	 * Compute and return the total probability of current selected permutations of
 	 * blue and red disks
 	 */
 	private static BigFraction computeProbabliity(boolean[] selected) {
