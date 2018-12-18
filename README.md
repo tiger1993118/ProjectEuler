@@ -5,7 +5,7 @@ This Github repository is my solutions to the ongoing challenges posted on Proje
 I would solve these problems whenever I am free, and I love them!
 All of the solutions are written in Java by me, I also give simple explanations for my solutions within each class
 
-I am currently @ Problem 121
+I am currently @ Problem 122
 
 
 |   Problem # Range |  Start Date  |  Solved Date |
